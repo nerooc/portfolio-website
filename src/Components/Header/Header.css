@@ -1,0 +1,25 @@
+.container {
+	margin: 30vh auto;
+	width: 50%;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 52px;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80px;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.social-media {
+	margin: 40px auto;
+	display: flex;
+	width: 15vw;
+	justify-content: space-between;
+}
