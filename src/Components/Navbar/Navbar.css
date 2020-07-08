@@ -1,0 +1,68 @@
+header {
+	font-family: 'Montserrat', sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-size: 19px;
+}
+
+.logo {
+	height: 70%;
+}
+
+.nav_links {
+	margin-left: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-preferred-size: 00px;
+	flex-basis: 700px;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	height: 100%;
+	margin-top: 60px;
+	margin-right: 100px;
+}
+
+header ul li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-preferred-size: 24%;
+	flex-basis: 24%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	list-style: none;
+	font-weight: 600;
+}
+
+header ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.button {
+	font-size: 18px;
+	margin-left: 20px;
+	padding: 20px 9px;
+	background-color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	color: black;
+	font-weight: 900;
+}
+
+.button:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
