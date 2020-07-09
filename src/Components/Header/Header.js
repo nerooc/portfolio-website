@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Header.css';
+import mailPNG from '../../Images/mail.png';
+import githubPNG from '../../Images/github.png';
+import linkedinPNG from '../../Images/linked-in.png';
 
 class Header extends React.Component {
 	render() {
@@ -10,13 +13,13 @@ class Header extends React.Component {
 				<h1>I'M A DEVELOPER</h1>
 				<div className="social-media">
 					<a href="#">
-						<img src="../../Images/mail.svg" />
+						<img src={mailPNG} alt="mail-svg" />
 					</a>
 					<a href="#">
-						<img src="../../Images/github.svg" />
+						<img src={githubPNG} alt="git-svg" />
 					</a>
 					<a href="#">
-						<img src="../../Images/linked-in.svg" />
+						<img src={linkedinPNG} alt="linked-in-svg" />
 					</a>
 				</div>
 			</div>
