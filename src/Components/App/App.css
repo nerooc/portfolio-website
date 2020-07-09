@@ -6,4 +6,11 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
+}
+
+.test {
+	position: relative;
+	height: 1000px;
+	background-color: aqua;
 }

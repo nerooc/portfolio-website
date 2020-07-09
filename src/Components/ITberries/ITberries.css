@@ -1,0 +1,47 @@
+.container2 {
+	overflow: hidden;
+	position: relative;
+	height: 350px;
+	background-color: #1d1d1d;
+	width: 100vw;
+}
+
+.text-container {
+	position: absolute;
+	z-index: 1;
+	padding-left: 120px;
+	padding-top: 50px;
+	width: 55%;
+}
+
+.h1white {
+	color: white;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 40px;
+	letter-spacing: 0.18538em;
+}
+
+.itb-p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.itb-logo {
+	position: absolute;
+	z-index: -2;
+	top: -500px;
+	right: 100px;
+	height: 500px;
+	width: 350px;
+	transform: rotate(24deg);
+}

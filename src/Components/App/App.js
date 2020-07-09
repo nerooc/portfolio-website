@@ -2,15 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import Navbar from '../Navbar/Navbar';
 import Header from '../Header/Header';
+import ITberries from '../ITberries/ITberries';
 import './App.css';
 
 function App() {
 	return (
 		//{/* teoretyczny Navbar */}
-		<div className="landing-page">
-			<Navbar />
-			<Header />
-		</div>
+		<html>
+			<div className="landing-page">
+				<Navbar />
+				<Header />
+			</div>
+			<div>
+				<ITberries />
+			</div>
+			<div className="test"></div>
+		</html>
 	);
 }
 
