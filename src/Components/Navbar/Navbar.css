@@ -4,14 +4,16 @@ header {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 	font-size: 17px;
+	background-color: black;
 }
 
-.logo {
-	height: 70%;
+.nav-wrapper {
+	height: 77px;
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+	transition: 0.5s;
 }
 
 .nav_links {
@@ -19,13 +21,21 @@ header {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	width: 700px;
 	-ms-flex-preferred-size: 00px;
-	flex-basis: 700px;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	height: 100%;
 	margin-top: 60px;
 	margin-right: 5vw;
+	transition: 0.5s;
+}
+
+.scroll-links {
+	margin-top: 15px;
+}
+
+.scroll-wrapper {
+	background-color: black;
 }
 
 header ul li {
@@ -50,9 +60,9 @@ header ul li a {
 }
 
 .button {
-	font-size: 18px;
-	margin-left: 20px;
-	padding: 20px 9px;
+	font-size: 16px;
+	margin-left: 1.5vw;
+	padding: 15px 9px;
 	background-color: white;
 	border: none;
 	border-radius: 50px;
@@ -72,16 +82,24 @@ header ul li a {
 		font-size: 15px;
 	}
 
+	.nav-wrapper {
+		height: 73px;
+	}
+
 	.button {
 		font-size: 13px;
 	}
 
 	.nav_links {
-		flex-basis: 500px;
+		width: 500px;
 	}
 }
 
 @media (max-width: 585px) {
+	/*
+	miejsce na kod do hamburgera
+	*/
+
 	header {
 		font-size: 13px;
 	}
@@ -91,6 +109,6 @@ header ul li a {
 	}
 
 	.nav_links {
-		flex-basis: 300px;
+		width: 300px;
 	}
 }
