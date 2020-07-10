@@ -1,7 +1,7 @@
 .container2 {
 	overflow: hidden;
 	position: relative;
-	min-height: 31vh;
+	min-height: 350px;
 	background-color: #1d1d1d;
 	width: 100vw;
 	max-width: 100%;
@@ -22,6 +22,9 @@
 	font-size: 38px;
 	line-height: 40px;
 	letter-spacing: 0.18538em;
+	transition: 0.5s;
+	transform-origin: left;
+	transform: scaleX(1);
 }
 
 .itb-p {
