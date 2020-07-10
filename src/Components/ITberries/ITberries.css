@@ -22,9 +22,6 @@
 	font-size: 38px;
 	line-height: 40px;
 	letter-spacing: 0.18538em;
-	transition: 0.5s;
-	transform-origin: left;
-	transform: scaleX(1);
 }
 
 .itb-p {
@@ -43,7 +40,7 @@
 	position: absolute;
 	z-index: -2;
 	top: -500px;
-	right: 100px;
+	right: 10vw;
 	height: 500px;
 	width: 350px;
 	transform: rotate(24deg);

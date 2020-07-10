@@ -7,7 +7,7 @@ header {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	font-size: 19px;
+	font-size: 17px;
 }
 
 .logo {
@@ -25,7 +25,7 @@ header {
 	justify-content: space-around;
 	height: 100%;
 	margin-top: 60px;
-	margin-right: 100px;
+	margin-right: 5vw;
 }
 
 header ul li {
@@ -41,7 +41,7 @@ header ul li {
 	-ms-flex-align: center;
 	align-items: center;
 	list-style: none;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 header ul li a {
@@ -65,4 +65,32 @@ header ul li a {
 
 .button:hover {
 	background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1300px) {
+	header {
+		font-size: 15px;
+	}
+
+	.button {
+		font-size: 13px;
+	}
+
+	.nav_links {
+		flex-basis: 500px;
+	}
+}
+
+@media (max-width: 585px) {
+	header {
+		font-size: 13px;
+	}
+
+	.button {
+		font-size: 12px;
+	}
+
+	.nav_links {
+		flex-basis: 300px;
+	}
 }
