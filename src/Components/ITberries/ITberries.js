@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './ITberries.css';
 import Button from '../Button/Button';
 import itbPNG from '../../Images/ITB.png';

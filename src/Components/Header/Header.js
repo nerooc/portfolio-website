@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Header.css';
 import mailPNG from '../../Images/mail.png';
 import githubPNG from '../../Images/github.png';

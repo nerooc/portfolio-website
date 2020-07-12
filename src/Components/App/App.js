@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import Navbar from '../Navbar/Navbar';
 import Header from '../Header/Header';
 import ITberries from '../ITberries/ITberries';
