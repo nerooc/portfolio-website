@@ -1,24 +1,12 @@
 import React from 'react';
-import './Button.css';
 import styled, {css} from 'styled-components'
 
 const Button = styled.button `
-	/*Reset's every elements apperance*/
+	/* button reset */
 	background: none repeat scroll 0 0 transparent;
 	border: medium none;
-	border-spacing: 0;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 1.42rem;
-	list-style: none outside none;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	text-indent: 0;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+	
+	/* button style properties */
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
