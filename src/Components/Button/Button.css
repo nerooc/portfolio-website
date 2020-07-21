@@ -24,7 +24,6 @@ button {
 	font-size: 15px;
 	position: relative;
 	padding: 13px 30px;
-	color: white;
 	transition: all 0.5s ease 0.2s;
 	cursor: pointer;
 	box-sizing: border-box;
@@ -37,7 +36,6 @@ button::before {
 	position: absolute;
 	top: 0;
 	left: -30px;
-	background-color: white;
 	height: 100%;
 	width: 2px;
 	transition: all 0.2s ease 0s;
@@ -49,7 +47,6 @@ button::after {
 	position: absolute;
 	right: -30px;
 	top: 0;
-	background-color: white;
 	height: 100%;
 	width: 2px;
 	transition: all 0.2s ease 0s;
@@ -64,8 +61,7 @@ button:hover::after {
 }
 
 button:hover {
-	color: black;
-	background-color: white;
+
 	font-weight: 600;
 	-webkit-box-shadow: inset 0px 0px 0px 2px white;
 	-moz-box-shadow: inset 0px 0px 0px 2px white;

@@ -6,7 +6,6 @@ import './App.css';
 
 function App() {
 	return (
-		//{/* teoretyczny Navbar */}
 		<html>
 			<div className="landing-page">
 				<Navbar />

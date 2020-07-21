@@ -29,7 +29,7 @@ class Header extends React.Component {
 						</p>
 					</Fade>
 					<Fade left duration={2500} distance="30px">
-						<Button text="READ MORE" />
+						<Button white>READ MORE</Button>
 					</Fade>
 				</div>
 			</div>
