@@ -13,13 +13,13 @@ const Button = styled.button `
 	font-size: 15px;
 	position: relative;
 	padding: 13px 30px;
+	margin-left: 30px;
 	color: ${props => props.white
     ? 'white'
     : 'black'};
 	transition: all 0.5s ease 0.2s;
 	cursor: pointer;
 	box-sizing: border-box;
-	margin-left: 30px;
 
 
 	&::before {
@@ -76,6 +76,13 @@ const Button = styled.button `
                                 ? 'white'
                                 : 'black'};
 		cursor: pointer;
+	}
+
+	@media (max-width: 630px) {
+		margin-left: ${props => props.margin
+                                ? '0'
+                                : '30px' };
+		
 	}
 `;
 

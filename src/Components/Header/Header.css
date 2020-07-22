@@ -24,19 +24,18 @@ h1 {
     justify-content: space-between;
 }
 
-.social-media-unit{
-	width: 40px;
+.social-media-unit {
+    width: 40px;
 }
 
 .separator {
-	margin-top: 20px;
+    margin-top: 20px;
     width: 200px;
     height: auto;
 }
 
-img {
-    width: 2.2vw;
-}
+
+
 @media (max-width: 1300px) {
     .container {
         width: 90%;
@@ -48,26 +47,26 @@ img {
 
     h1 {
         font-size: 60px;
-	}
-	
-	.separator {
-		margin-top: 15px;
-		width: 150px;
-		height: auto;
-	}
+    }
 
-	.social-media {
-		margin: 30px auto;
-		display: flex;
-		width: 200px;
-		justify-content: space-between;
-	}
-	.social-media-unit{
-	width: 30px;
+    .separator {
+        margin-top: 15px;
+        width: 150px;
+        height: auto;
+    }
+
+    .social-media {
+        margin: 30px auto;
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+    }
+
+    .social-media-unit {
+        width: 30px;
+    }
 }
 
-
-}
 @media (max-width: 630px) {
     .container {
         width: 90%;
@@ -79,22 +78,22 @@ img {
 
     h1 {
         font-size: 40px;
-	}
-	
-	.separator {
-		margin-top: 12px;
-		width: 100px;
-		height: auto;
-	}
+    }
 
-	.social-media {
-		margin: 20px auto;
-		display: flex;
-		width: 130px;
-		justify-content: space-between;
-	}
+    .separator {
+        margin-top: 12px;
+        width: 100px;
+        height: auto;
+    }
 
-	.social-media-unit{
-		width: 20px;
-	}
+    .social-media {
+        margin: 20px auto;
+        display: flex;
+        width: 140px;
+        justify-content: space-between;
+    }
+
+    .social-media-unit {
+        width: 25px;
+    }
 }
