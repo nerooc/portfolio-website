@@ -1,57 +1,100 @@
 .container {
-	margin: 40vh auto;
-	width: 70%;
-	color: white;
-	text-align: center;
+    margin: 40vh auto;
+    width: 70%;
+    color: white;
+    text-align: center;
 }
 
 h2 {
-	font-family: 'Advent Pro', sans-serif;
-	font-size: 52px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 52px;
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 80px;
-	font-weight: 600;
-	padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    padding-top: 10px;
 }
 
 .social-media {
-	margin: 40px auto;
-	display: flex;
-	width: 15vw;
-	justify-content: space-between;
+    margin: 40px auto;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.social-media-unit{
+	width: 40px;
+}
+
+.separator {
+	margin-top: 20px;
+    width: 200px;
+    height: auto;
 }
 
 img {
-	width: 2.2vw;
+    width: 2.2vw;
 }
-
 @media (max-width: 1300px) {
-	.container {
-		width: 90%;
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 60px;
+	}
+	
+	.separator {
+		margin-top: 15px;
+		width: 150px;
+		height: auto;
 	}
 
-	h2 {
-		font-size: 40px;
+	.social-media {
+		margin: 30px auto;
+		display: flex;
+		width: 200px;
+		justify-content: space-between;
 	}
-
-	h1 {
-		font-size: 60px;
-	}
+	.social-media-unit{
+	width: 30px;
 }
 
+
+}
 @media (max-width: 630px) {
-	.container {
-		width: 90%;
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+	}
+	
+	.separator {
+		margin-top: 12px;
+		width: 100px;
+		height: auto;
 	}
 
-	h2 {
-		font-size: 30px;
+	.social-media {
+		margin: 20px auto;
+		display: flex;
+		width: 130px;
+		justify-content: space-between;
 	}
 
-	h1 {
-		font-size: 40px;
+	.social-media-unit{
+		width: 20px;
 	}
 }
