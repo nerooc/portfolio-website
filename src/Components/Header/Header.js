@@ -14,13 +14,13 @@ class Header extends React.Component {
 				<img src={separator} className="separator" alt="separator" />
 
 				<div className="social-media">
-					<a href="#">
+					<a href="mailto:tomasz_gajda@outlook.com">
 						<img className="social-media-unit" src={mailPNG} alt="mail-svg" />
 					</a>
-					<a href="#">
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/nerooc">
 						<img className="social-media-unit" src={githubPNG} alt="git-svg" />
 					</a>
-					<a href="#">
+					<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tomasz-gajda-128371178/">
 						<img className="social-media-unit" src={linkedinPNG} alt="linked-in-svg" />
 					</a>
 				</div>
