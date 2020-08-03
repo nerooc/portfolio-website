@@ -17,7 +17,7 @@ const Button = styled.button `
 	color: ${props => props.white
     ? 'white'
     : 'black'};
-	transition: all 0.5s ease 0.2s;
+	transition: all 0.5s ease 0.2s, margin-left 0.5s;
 	cursor: pointer;
 	box-sizing: border-box;
 
@@ -76,6 +76,8 @@ const Button = styled.button `
                                 ? 'white'
                                 : 'black'};
 		cursor: pointer;
+
+		margin-left: 0;
 	}
 
 	@media (max-width: 630px) {
