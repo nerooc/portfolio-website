@@ -62,8 +62,8 @@ h1 {
         justify-content: space-between;
     }
 
-    .social-media-unit {
-        width: 30px;
+    .social-media-unit { /* TO SVG!!!!! */
+        width: 35px;
     }
 }
 
