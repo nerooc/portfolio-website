@@ -109,10 +109,6 @@ header ul li a:hover {
 		height: 75px;
 	}
 
-	.hamburger{
-		
-	}
-	
 	.nav-links {
 		position: absolute;
 		z-index: -1;
@@ -154,7 +150,7 @@ header ul li a:hover {
 	}
 
 	header ul li:hover >  a {
-		opacity:0.5;
+		opacity: 0.5;
 	}
 
 	header ul li:first-of-type{
