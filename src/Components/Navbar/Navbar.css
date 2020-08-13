@@ -5,6 +5,22 @@ header {
 	background-color: black;
 }
 
+.logo{
+	margin-left: 5vw;
+	margin-top: 60px;
+	height: 50px;
+	width: 50px;
+	transition: margin-top 0.5s;
+}
+
+.logo:hover{
+	cursor: pointer;
+}
+
+.logo-wrapper{
+	margin-top: 0px;
+}
+
 .black-bar{
 	display: none;
 }
