@@ -6,11 +6,15 @@ import '../../globalStyles/hamburger.css';
 class Navbar extends React.Component {
 
     handleHamburgerClick = () => {
-        //const hamburger = document.querySelector('.hamburger-icon');
+        const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
+
         navLinks
             .classList
             .toggle('nav-collapse');
+
+        hamburger.classList.toggle('is-active');
+        
     }
 
     render() {
