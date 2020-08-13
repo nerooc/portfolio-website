@@ -100,6 +100,7 @@ header ul li a:hover {
 }
 
 @media (max-width: 585px) {
+
 	.black-bar{
 		display: inline;
 		background-color: black;
@@ -119,7 +120,7 @@ header ul li a:hover {
 	.nav-links {
 		position: absolute;
 		z-index: -1;
-		top: 0px;
+		top: -400px;
 		display: flex;
 		flex-direction: column;
 		transition: top 1s;
@@ -130,6 +131,10 @@ header ul li a:hover {
 		width: 100%;
 	}
 
+	.nav-collapse{
+		top: 0px;
+	}
+
 	.nav-wrapper{
 		z-index: 3;
 		background-color: black;
@@ -138,8 +143,6 @@ header ul li a:hover {
 		transition: height 1s ease;
 	}
 	
-	
-
 	header {
 		font-size: 13px;
 	}
@@ -166,14 +169,14 @@ header ul li a:hover {
 		align-self: center;
 		font-size: 12px;
 		margin: 0;
-		width: 100px;
+		border-radius: 0;
+		width: 100%;
 		flex-basis: 10px;
-		margin: 10px;
+		padding: 30px;
 	}
 	
 	.scroll-links {
 		margin-top: 75px;
 	}
-
 
 }

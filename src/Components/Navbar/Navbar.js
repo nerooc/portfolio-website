@@ -1,8 +1,18 @@
 import React from 'react';
 import './Navbar.css';
 import hamburger from '../../Images/hamburger.svg';
+import '../../globalStyles/hamburger.css';
 
 class Navbar extends React.Component {
+
+    handleHamburgerClick = () => {
+        //const hamburger = document.querySelector('.hamburger-icon');
+        const navLinks = document.querySelector('.nav-links');
+        navLinks
+            .classList
+            .toggle('nav-collapse');
+    }
+
     render() {
         window.onscroll = () => {
             const nav_wrap = document.querySelector('.nav-wrapper');
@@ -32,9 +42,17 @@ class Navbar extends React.Component {
 
                 <div className="nav-wrapper">
                     <div className="black-bar">
-                        <img className="hamburger-icon" src={hamburger} alt="hamburger-icon"/>
+                        <button
+                            className="hamburger hamburger--collapse"
+                            type="button"
+                            onClick={this.handleHamburgerClick}>
+                            <span className="hamburger-box">
+                                <span className="hamburger-inner"></span>
+                            </span>
+                        </button>
+
                     </div>
-                    <ul className="nav-collapse nav-links">
+                    <ul className="nav-links">
                         <li>
                             <a href="#">About me</a>
                         </li>
