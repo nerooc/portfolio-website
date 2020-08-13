@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, {css} from 'styled-components'
 
 const Button = styled.button `
@@ -82,8 +81,8 @@ const Button = styled.button `
 
 	@media (max-width: 630px) {
 		margin-left: ${props => props.margin
-                                ? '0'
-                                : '30px' };
+                                    ? '0'
+                                    : '30px'};
 		
 	}
 `;
