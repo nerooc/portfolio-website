@@ -1,0 +1,2 @@
+- change social-media-units to actual SVGs and make them bigger
+- add loading screen for the hero photo to load

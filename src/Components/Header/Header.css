@@ -26,6 +26,12 @@ h1 {
 
 .social-media-unit {
     width: 40px;
+    -webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.social-media-unit:hover {
+    opacity: 0.5;
 }
 
 .separator {
