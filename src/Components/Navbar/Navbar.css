@@ -117,6 +117,12 @@ header ul li a:hover {
 
 @media (max-width: 585px) {
 
+
+	.logo{
+		position: absolute;		
+		bottom: 12px;
+	}
+
 	.black-bar{
 		display: flex;
 		justify-content: flex-end;
