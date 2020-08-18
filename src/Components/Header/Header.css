@@ -5,12 +5,12 @@
     text-align: center;
 }
 
-h2 {
+.submain--header{
     font-family: 'Advent Pro', sans-serif;
     font-size: 52px;
 }
 
-h1 {
+.main--header {
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     font-weight: 600;
