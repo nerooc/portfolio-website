@@ -47,11 +47,11 @@
         width: 90%;
     }
 
-    h2 {
+    .submain--header {
         font-size: 40px;
     }
 
-    h1 {
+    .main--header {
         font-size: 60px;
     }
 
@@ -78,11 +78,11 @@
         width: 90%;
     }
 
-    h2 {
+    .submain--header {
         font-size: 30px;
     }
 
-    h1 {
+    .main--header {
         font-size: 40px;
     }
 
