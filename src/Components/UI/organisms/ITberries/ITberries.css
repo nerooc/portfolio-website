@@ -1,4 +1,4 @@
-.container2 {
+.itb {
 	overflow: hidden;
 	position: relative;
 	min-height: 350px;
@@ -7,14 +7,14 @@
 	max-width: 100%;
 }
 
-.text-container {
+.itb__container {
 	position: relative;
 	z-index: 1;
 	padding: 50px 70px 50px 70px;
 	width: 55%;
 }
 
-.h1white {
+.itb__h1 {
 	color: white;
 	font-family: Montserrat;
 	font-style: normal;
@@ -24,7 +24,7 @@
 	letter-spacing: 0.18538em;
 }
 
-.itb-p {
+.itb__p {
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 100;
@@ -36,7 +36,7 @@
 	margin-bottom: 30px;
 }
 
-.itb-logo {
+.itb__logo {
 	position: absolute;
 	z-index: -2;
 	top: -500px;
@@ -46,32 +46,35 @@
 	transform: rotate(24deg);
 }
 
-.itb--button{
+.itb__button{
 	margin-left: 30px;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (max-width: 1300px) {
-	.h1white {
+	.itb__h1 {
 		font-size: 25px;
 		line-height: 30px;
 	}
 }
 
 @media (max-width: 630px) {
-	.text-container {
+	.itb__container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: auto;
 	}
 
-	.itb--button{
+	.itb__button{
 		margin-left: 0px;
 	}
 
-	.itb-logo {
+	.itb__logo {
 		right: 50%;
-		transform: translate(+50%, 0);
+		transform: translate(50%, 0);
 	}
 }
 

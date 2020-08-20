@@ -1,103 +1,105 @@
-.container {
+.header {
     margin: 40vh auto;
     width: 70%;
     color: white;
     text-align: center;
 }
 
-.submain--header{
+.header__submain{
     font-family: 'Advent Pro', sans-serif;
     font-size: 52px;
 }
 
-.main--header {
+.header__main {
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     font-weight: 600;
     padding-top: 10px;
 }
 
-.social-media {
+.header__separator {
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.header__social-media {
     margin: 40px auto;
     display: flex;
     width: 300px;
     justify-content: space-between;
 }
 
-.social-media-unit {
+.header__social-media-unit {
     width: 40px;
     -webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
 
-.social-media-unit:hover {
+.header__social-media-unit:hover {
     opacity: 0.5;
 }
 
-.separator {
-    margin-top: 20px;
-    width: 200px;
-    height: auto;
-}
+/* MEDIA QUERIES */
 
 @media (max-width: 1600px) {
-    .container {
+    .header {
         width: 90%;
     }
 
-    .submain--header {
+    .header__submain {
         font-size: 40px;
     }
 
-    .main--header {
+    .header__main {
         font-size: 60px;
     }
 
-    .separator {
+    .header__separator {
         margin-top: 15px;
         width: 150px;
         height: auto;
     }
 
-    .social-media {
+    .header__social-media {
         margin: 30px auto;
         display: flex;
         width: 200px;
         justify-content: space-between;
     }
 
-    .social-media-unit { /* TO SVG!!!!! */
+    .header__social-media-unit { /* TO SVG!!!!! */
         width: 35px;
     }
 }
 
 @media (max-width: 630px) {
-    .container {
+    .header {
         width: 90%;
     }
 
-    .submain--header {
+    .header__submain {
         font-size: 30px;
     }
 
-    .main--header {
+    .header__main {
         font-size: 40px;
     }
 
-    .separator {
+    .header__separator {
         margin-top: 12px;
         width: 100px;
         height: auto;
     }
 
-    .social-media {
+    .header__social-media {
         margin: 20px auto;
         display: flex;
         width: 140px;
         justify-content: space-between;
     }
 
-    .social-media-unit {
+    .header__social-media-unit {
         width: 25px;
     }
 }

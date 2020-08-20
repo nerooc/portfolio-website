@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionHeader = styled.h1`
+const SectionHeader = styled.h1 `
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
