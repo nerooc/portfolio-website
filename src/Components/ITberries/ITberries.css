@@ -46,6 +46,10 @@
 	transform: rotate(24deg);
 }
 
+.itb--button{
+	margin-left: 30px;
+}
+
 @media (max-width: 1300px) {
 	.h1white {
 		font-size: 25px;
@@ -59,6 +63,10 @@
 		flex-direction: column;
 		align-items: center;
 		width: auto;
+	}
+
+	.itb--button{
+		margin-left: 0px;
 	}
 
 	.itb-logo {

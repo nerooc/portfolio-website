@@ -40,8 +40,6 @@
     height: auto;
 }
 
-
-
 @media (max-width: 1600px) {
     .container {
         width: 90%;

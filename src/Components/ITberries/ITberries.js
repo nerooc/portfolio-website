@@ -29,7 +29,7 @@ class Header extends React.Component {
 						</p>
 					</Fade>
 					<Fade left duration={2500} distance="30px">
-						<Button margin white>READ MORE</Button>
+						<Button white className="itb--button" onClick={() => { window.open("https://www.facebook.com/ITberries/") }}>READ MORE</Button>
 					</Fade>
 				</div>
 			</div>

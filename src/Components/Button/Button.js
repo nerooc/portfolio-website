@@ -12,7 +12,6 @@ const Button = styled.button `
 	font-size: 15px;
 	position: relative;
 	padding: 13px 30px;
-	margin-left: 30px;
 	color: ${props => props.white
     ? 'white'
     : 'black'};
@@ -79,12 +78,8 @@ const Button = styled.button `
 		margin-left: 0;
 	}
 
-	@media (max-width: 630px) {
-		margin-left: ${props => props.margin
-                                    ? '0'
-                                    : '30px'};
-		
-	}
+	&:focus { outline: none; }
+
 `;
 
 export default Button;
