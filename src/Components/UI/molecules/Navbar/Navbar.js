@@ -9,11 +9,11 @@ class Navbar extends React.Component {
 
     handleHamburgerClick = () => {
         const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+        const navLinks = document.querySelector('.nav-bar__links');
 
         navLinks
             .classList
-            .toggle('nav-collapse');
+            .toggle('nav-bar--collapsed');
 
         hamburger
             .classList
@@ -26,44 +26,44 @@ class Navbar extends React.Component {
         // funkcja która po scrollu przesuwa navbar w górę i dołącza czarny background
 
         window.onscroll = () => {
-            const nav_wrap = document.querySelector('.nav-wrapper');
-            const logo = document.querySelector('.logo');
+            const nav_wrap = document.querySelector('.nav-bar');
+            const logo = document.querySelector('.nav-bar__logo');
 
             if (this.scrollY <= 10) {
                 nav_wrap
                     .classList
-                    .remove('scroll-wrapper');
+                    .remove('nav-bar--scrolled');
                 logo
                     .classList
-                    .remove('logo-wrapper');
+                    .remove('nav-bar__logo--scrolled');
             } else {
                 nav_wrap
                     .classList
-                    .add('scroll-wrapper');
+                    .add('nav-bar--scrolled');
                 logo
                     .classList
-                    .add('logo-wrapper');
+                    .add('nav-bar__logo--scrolled');
             }
 
-            const nav_links = document.querySelector('.nav-links');
+            const nav_links = document.querySelector('.nav-bar__links');
 
             if (this.scrollY <= 10) 
-                nav_links.classList.remove('scroll-links');
+                nav_links.classList.remove('nav-bar__links--scrolled');
             else 
                 nav_links
                     .classList
-                    .add('scroll-links');
+                    .add('nav-bar__links--scrolled');
             
             if (window.scrollY === 0) {
                 logo
                     .classList
-                    .remove('logo-wrapper');
+                    .remove('nav-bar__logo--scrolled');
                 nav_wrap
                     .classList
-                    .remove('scroll-wrapper');
+                    .remove('nav-bar--scrolled');
                 nav_links
                     .classList
-                    .remove('scroll-links');
+                    .remove('nav-bar__links--scrolled');
             }
 
         };
@@ -71,9 +71,10 @@ class Navbar extends React.Component {
         return (
             <header>
 
-                <div className="nav-wrapper">
-                    <img className="logo" src={logo}/>
-                    <div className="black-bar">
+                <div className="nav-bar">
+
+                    <img className="nav-bar__logo" src={logo}/>
+                    <div className="nav-bar__black-bar">
                         <button
                             className="hamburger hamburger--collapse"
                             type="button"
@@ -82,19 +83,24 @@ class Navbar extends React.Component {
                                 <span className="hamburger-inner"></span>
                             </span>
                         </button>
-
                     </div>
-                    <ul className="nav-links">
+
+                    <ul className="nav-bar__links">
+
                         <li>
                             <a href="#">About me</a>
                         </li>
+
                         <li>
                             <a href="#">Language</a>
                         </li>
+
                         <li>
                             <a href="#">Portfolio</a>
                         </li>
-                        <li className="button">CONTACT ME</li>
+
+                        <li className="nav-bar__button">CONTACT ME</li>
+
                     </ul>
                 </div>
             </header>
