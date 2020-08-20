@@ -6,7 +6,7 @@ import './Hero.css';
 
 const Hero = () => {
 	return (
-			<div className="landing--page">
+			<div className="landing-page">
 				<Navbar />
 				<Header />
 			</div>
