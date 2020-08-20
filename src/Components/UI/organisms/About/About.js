@@ -8,14 +8,14 @@ import './About.css';
 
 const About = () => {
 	return (
-        <div className="about--section">
-            <SectionHeader className="about--header">ABOUT ME</SectionHeader>
+        <div className="about">
+            <SectionHeader className="about__header">ABOUT ME</SectionHeader>
            
-            <Paragraph className="about--paragraph">My name is Tomasz Gajda, I’m a third year Applied Computer Science student at AGH University of Science and Technology in Cracow, Poland. </Paragraph>
+            <Paragraph className="about__paragraph">My name is Tomasz Gajda, I’m a third year Applied Computer Science student at AGH University of Science and Technology in Cracow, Poland. </Paragraph>
             
-            <Button className="about--button">EXPLORE</Button>
+            <Button className="about_button">EXPLORE</Button>
             
-            <img src={separator} className="about--separator" alt="aboutSeparator" />
+            <img src={separator} className="about__separator" alt="aboutSeparator" />
        </div>
 	);
 }
