@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import mailPNG from '../../Images/mail.png';
-import githubPNG from '../../Images/github.png';
-import linkedinPNG from '../../Images/linked-in.png';
-import separator from '../../Images/separatorWhite.png';
+import mailPNG from '../../../../Images/mail.png';
+import githubPNG from '../../../../Images//github.png';
+import linkedinPNG from '../../../../Images//linked-in.png';
+import separator from '../../../../Images/separatorWhite.png';
 
 class Header extends React.Component {
 	render() {

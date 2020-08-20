@@ -1,7 +1,7 @@
 import React from 'react';
 import './ITberries.css';
-import Button from '../Button/Button';
-import itbPNG from '../../Images/ITB.png';
+import Button from '../../atoms/Button/Button';
+import itbPNG from '../../../../Images/ITB.png';
 import Parallax from 'react-rellax';
 import Fade from 'react-reveal/Fade';
 

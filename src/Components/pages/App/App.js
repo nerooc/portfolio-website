@@ -1,20 +1,16 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
-import Header from '../Header/Header';
-import ITberries from '../ITberries/ITberries';
-import SectionHeader from '../SectionHeader/SectionHeader';
-import Paragraph from '../Paragraph/Paragraph';
-import Button from '../Button/Button';
-import separator from '../../Images/separatorBlack.png';
+import ITberries from '../../UI/organisms/ITberries/ITberries';
+import SectionHeader from '../../UI/atoms/SectionHeader/SectionHeader';
+import Paragraph from '../../UI/atoms/Paragraph/Paragraph';
+import Button from '../../UI/atoms/Button/Button';
+import separator from '../../../Images/separatorBlack.png';
+import Hero from '../../UI/organisms/Hero/Hero';
 import './App.css';
 
 function App() {
 	return (
 		<html>
-			<div className="landing-page">
-				<Navbar />
-				<Header />
-			</div>
+			<Hero />
 			<div>
 				<ITberries />
 			</div>
