@@ -13,7 +13,7 @@ const About = () => {
            
             <Paragraph className="about__paragraph">My name is Tomasz Gajda, I’m a third year Applied Computer Science student at AGH University of Science and Technology in Cracow, Poland. </Paragraph>
             
-            <Button className="about_button">EXPLORE</Button>
+            <Button className="about__button">EXPLORE</Button>
             
             <img src={separator} className="about__separator" alt="aboutSeparator" />
        </div>
