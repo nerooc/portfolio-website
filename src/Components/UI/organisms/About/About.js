@@ -22,7 +22,7 @@ const About = () => {
             
             <img src={separator} className="about__separator" alt="aboutSeparator" />
 
-            <Service source={development} />
+            <Service title="DEVELOPMENT" source={development}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
        </div>
 	);
 }
