@@ -1,15 +1,34 @@
 .service{
-
+    max-width: 430px;
+    position: relative;
+    margin: 30px;
 }
 
-.service__image{
-
+.service__svg{
+    position: absolute;
+    transform:translate(-75%, -30%);
 }
 
-.service__title{
-
+.service__h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.18538em;
+    color: #000000;
 }
 
-.service__text{
-    
+.service__p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+    margin-top: 20px;
+    color: #000000;
 }

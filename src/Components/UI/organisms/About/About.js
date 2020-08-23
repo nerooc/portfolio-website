@@ -22,7 +22,14 @@ const About = () => {
             
             <img src={separator} className="about__separator" alt="aboutSeparator" />
 
-            <Service title="DEVELOPMENT" source={development}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
+            <div className="services">
+                <Service className="services__service-unit" title="DESIGN" source={design}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
+
+                <Service className="services__service-unit" title="DEVELOPMENT" source={development}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
+
+                <Service className="services__service-unit" title="MAINTENANCE" source={maintenance}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
+            </div>
+
        </div>
 	);
 }
