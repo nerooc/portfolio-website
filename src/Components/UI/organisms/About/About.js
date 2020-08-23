@@ -2,7 +2,12 @@ import React from 'react';
 import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
+import Service from '../../atoms/Service/Service';
 import separator from '../../../../Images/separatorBlack.png';
+
+import design from '../../../../Images/design.png';
+import maintenance from '../../../../Images/maintenance.png';
+import development from '../../../../Images/development.png';
 
 import './About.css';
 
@@ -16,6 +21,8 @@ const About = () => {
             <Button className="about__button">EXPLORE</Button>
             
             <img src={separator} className="about__separator" alt="aboutSeparator" />
+
+            <Service source={development} />
        </div>
 	);
 }
