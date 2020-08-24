@@ -73,7 +73,7 @@ class Navbar extends React.Component {
 
                 <div className="nav-bar">
 
-                    <img className="nav-bar__logo" src={logo}/>
+                    <img className="nav-bar__logo" src={logo} alt="logo"/>
                     <div className="nav-bar__black-bar">
                         <button
                             className="hamburger hamburger--collapse"

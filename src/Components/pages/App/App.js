@@ -5,14 +5,13 @@ import About from '../../UI/organisms/About/About';
 import './App.css';
 
 function App() {
-	return (
-		<html>
-			<Hero />
-			<ITberries />
-			<About />
-		</html>
-	);
+    return (
+        <React.Fragment>
+            <Hero/>
+            <ITberries/>
+            <About/>
+        </React.Fragment>
+    );
 }
 
 export default App;
-
