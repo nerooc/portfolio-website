@@ -2,12 +2,9 @@ import React from 'react';
 import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
-import Service from '../../atoms/Service/Service';
+import Services from '../../molecules/Services/Services';
 import separator from '../../../../Images/separatorBlack.png';
 
-import design from '../../../../Images/design.png';
-import maintenance from '../../../../Images/maintenance.png';
-import development from '../../../../Images/development.png';
 
 import './About.css';
 
@@ -21,14 +18,8 @@ const About = () => {
             <Button className="about__button">EXPLORE</Button>
             
             <img src={separator} className="about__separator" alt="aboutSeparator" />
-
-            <div className="services">
-                <Service className="services__service-unit" title="DESIGN" source={design}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
-
-                <Service className="services__service-unit" title="DEVELOPMENT" source={development}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
-
-                <Service className="services__service-unit" title="MAINTENANCE" source={maintenance}>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</Service>
-            </div>
+            
+            <Services />
 
        </div>
 	);
