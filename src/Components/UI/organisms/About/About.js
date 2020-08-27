@@ -7,7 +7,6 @@ import separator from '../../../../Images/separatorBlack.png';
 
 import Fade from 'react-reveal/Fade';
 
-
 import './About.css';
 
 const About = () => {
@@ -28,7 +27,7 @@ const About = () => {
             <img src={separator} className="about__separator" alt="aboutSeparator" />
             
             <Services />
-
+            
        </div>
 	);
 }
