@@ -6,7 +6,7 @@ import './Projects.css';
 const Projects = () => {
 	return (
 			<div className="projects">
-				
+				{/* tutaj map -> <Project props... ></Project>}*/}
 			</div>
 	);
 }

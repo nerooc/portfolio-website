@@ -11,6 +11,7 @@ const Portfolio = () => {
                 <SectionHeader>PORTFOLIO</SectionHeader>
             </div>
             <FilterBar/>
+			<Projects /> {/* przekazać tablicę z projektami */}
         </div>
     );
 }
