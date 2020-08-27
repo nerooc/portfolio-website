@@ -1,3 +1,6 @@
 - change social-media-units to actual SVGs and make them bigger
 - add loading screen for the hero photo to load
 - shorten paths in imports 
+- test out the different portfolio header background
+- change services rendering into a method that renders li elements
+- change units to ems&rems

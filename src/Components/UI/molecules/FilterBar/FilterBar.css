@@ -8,14 +8,15 @@
 .filter ul {
 	display: flex;
 	justify-content: center;
-    color: #ffffff;
+    color: gray;
     padding: 30px;
+    text-transform: uppercase;
 }
 
 .filter li {
 	cursor: pointer;
-	width: 4.33rem;
-	border-bottom: 1px solid #fff;
+	width: 200px;
+	border-bottom: 1px solid gray;
 	line-height: 1.13;
 	text-align: center;
 	font-weight: 600;
@@ -24,11 +25,11 @@
 }
 
 .filter li:hover {
-	color: #d4cfcf;
+	color: gray;
 }
 
 .filter li.active,
 .filter li.active:hover {
-	border-bottom: 1px solid #fa5563;
-	color: #fa5563;
+	border-bottom: 1px solid #ffffff;
+	color: #ffffff;
 }
