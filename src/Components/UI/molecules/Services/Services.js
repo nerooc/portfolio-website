@@ -10,19 +10,19 @@ import development from '../../../../Images/development.png';
 const Services = (props) => {
     return (
         <div className="services">
-            <Service className="services__service-unit" title="DESIGN" source={design}>I can
+            <Service 
+                title="DESIGN" 
+                source={design}>I can
                 design the site based on your needs and suggestions. I can also design the site
                 from scratch and consult you during the job.</Service>
 
             <Service
-                className="services__service-unit"
                 title="DEVELOPMENT"
                 source={development}>I
                 can design the site based on your needs and suggestions. I can also design the
                 site from scratch and consult you during the job.</Service>
 
             <Service
-                className="services__service-unit"
                 title="MAINTENANCE"
                 source={maintenance}>I
                 can design the site based on your needs and suggestions. I can also design the
