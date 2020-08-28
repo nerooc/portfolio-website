@@ -4,7 +4,7 @@ import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import FilterBar from '../../molecules/FilterBar/FilterBar';
 import './Portfolio.css';
 
-const Portfolio = () => {
+const Portfolio = (props) => {
     return (
         <div className="portfolio">
             <div className="portfolio__header">

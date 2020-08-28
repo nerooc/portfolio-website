@@ -3,7 +3,7 @@ import Project from '../../atoms/Project/Project';
 
 import './Projects.css';
 
-const Projects = () => {
+const Projects = (props) => {
 	return (
 			<div className="projects">
 				{/* tutaj map -> <Project props... ></Project>}*/}

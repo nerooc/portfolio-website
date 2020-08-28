@@ -4,3 +4,4 @@
 - test out the different portfolio header background
 - change services rendering into a method that renders li elements
 - change units to ems&rems
+- fix services css as I didn't provide the props earlier...

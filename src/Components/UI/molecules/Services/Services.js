@@ -7,7 +7,7 @@ import design from '../../../../Images/design.png';
 import maintenance from '../../../../Images/maintenance.png';
 import development from '../../../../Images/development.png';
 
-const Services = () => {
+const Services = (props) => {
     return (
         <div className="services">
             <Service className="services__service-unit" title="DESIGN" source={design}>I can
