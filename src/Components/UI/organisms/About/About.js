@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 import './About.css';
 
-const About = () => {
+const About = (props) => {
 	return (
         <div className="about">
 

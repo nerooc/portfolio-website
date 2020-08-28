@@ -4,7 +4,7 @@ import Header from '../../molecules/Header/Header';
 
 import './Hero.css';
 
-const Hero = () => {
+const Hero = (props) => {
 	return (
 			<div className="landing-page">
 				<Navbar />
