@@ -31,7 +31,7 @@ class FilterBar extends React.Component {
     handleFilterChange(filterOption) {
 		this.setState({
 			filter: filterOption,
-		});
+        });
 	}
 
     renderFilterOptions() {

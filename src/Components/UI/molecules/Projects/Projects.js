@@ -6,6 +6,13 @@ import './Projects.css';
 const Projects = (props) => {
 	return (
 			<div className="projects">
+				<Project></Project>
+				<Project></Project>
+				<Project></Project>
+				<Project></Project>
+				<Project></Project>
+				<Project></Project>
+
 				{/* tutaj map -> <Project props... ></Project>}*/}
 			</div>
 	);

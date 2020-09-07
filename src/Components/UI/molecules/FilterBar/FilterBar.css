@@ -1,22 +1,23 @@
 .filter{
-    display: flex;
+	display: flex;
     justify-content: center;
-    height: 100px;
     background-color: #1A1A1A;
 }
 
 .filter ul {
+	flex-wrap: wrap;
 	display: flex;
 	justify-content: center;
     color: gray;
-    padding-top: 35px;
     padding-bottom: 25px;
     text-transform: uppercase;
 }
 
 .filter li {
 	cursor: pointer;
+	padding-top: 30px;
 	width: 200px;
+	height: 30px;
 	border-bottom: 1px solid gray;
 	line-height: 1.13;
 	text-align: center;
