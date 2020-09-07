@@ -8,3 +8,13 @@
 	mix-blend-mode: normal;
 	background-color: white;
 }
+
+.contact__header{
+
+}
+
+.contact__paragraph{
+	margin-top: 70px;
+	width: 70%;
+	max-width: 760px;
+}
