@@ -8,15 +8,15 @@ import Contact from '../../UI/organisms/Contact/Contact';
 import './App.css';
 
 function App() {
-    return (
-        <React.Fragment>
-            <Hero/>
-            <ITberries/>
-            <About/>
-            <Portfolio />
-            <Contact />
-        </React.Fragment>
-    );
+  return (
+    <>
+      <Hero />
+      <ITberries />
+      <About />
+      <Portfolio />
+      <Contact />
+    </>
+  );
 }
 
 export default App;
