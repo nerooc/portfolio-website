@@ -1,20 +1,38 @@
-.contact{
-    padding: 130px 0 130px 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
-	mix-blend-mode: normal;
-	background-color: white;
+.contact {
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
+    mix-blend-mode: normal;
+    background-color: white;
 }
 
-.contact__header{
+.contact__header {}
 
+.contact__paragraph {
+    margin-top: 70px;
+    width: 70%;
+    max-width: 760px;
 }
 
-.contact__paragraph{
+.contact__separator {
+    margin-top: 70px;
+    width: 200px;
+    height: auto;
+}
+
+.contact__formwrapper{
 	margin-top: 70px;
-	width: 70%;
-	max-width: 760px;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	width: 600px;
+	height: 450px;
+}
+
+.contact__submit{
+	margin-top: 70px;
 }

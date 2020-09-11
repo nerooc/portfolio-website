@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.header__submain{
+.header__submain {
     font-family: 'Advent Pro', sans-serif;
     font-size: 52px;
 }
@@ -33,7 +33,7 @@
 .header__social-media-unit {
     width: 40px;
     -webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .header__social-media-unit:hover {
@@ -68,13 +68,14 @@
         justify-content: space-between;
     }
 
-    .header__social-media-unit { /* TO SVG!!!!! */
+    .header__social-media-unit {
+        /* TO SVG!!!!! */
         width: 35px;
     }
 }
 
 @media (max-width: 630px) {
-   
+
     .header {
         width: 90%;
     }

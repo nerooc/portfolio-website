@@ -42,6 +42,7 @@ class Navbar extends React.Component {
         navLinks.classList.remove('nav-bar__links--scrolled');
       }
     };
+    
 
     return (
       <header>

@@ -95,16 +95,16 @@ header ul li a:hover {
 /* MEDIA QUERIES */
 
 @media (max-width: 1600px) {
-	
-	header {
+
+    header {
         font-size: 15px;
     }
 
     .nav-bar {
         height: 73px;
-	}
-	
-	.nav-bar__links {
+    }
+
+    .nav-bar__links {
         width: 500px;
     }
 
@@ -121,9 +121,9 @@ header ul li a:hover {
         height: 75px;
         align-items: flex-end;
         transition: height 1s ease;
-	}
-	
-	.nav-bar__logo {
+    }
+
+    .nav-bar__logo {
         position: absolute;
         bottom: 12px;
     }
@@ -146,11 +146,11 @@ header ul li a:hover {
         margin-top: 75px;
         margin-left: 0;
         margin-right: 0;
-        background: rgba(0,0,0,.9);
+        background: rgba(0, 0, 0, .9);
         width: 100%;
-	}
+    }
 
-	.nav-bar--collapsed {
+    .nav-bar--collapsed {
         top: 0;
     }
 
@@ -162,16 +162,16 @@ header ul li a:hover {
         flex-basis: 70px;
         list-style: none;
         font-weight: 500;
-	}
-	
+    }
+
     header ul li:hover {
         cursor: pointer;
-	}
-	
-    header ul li:hover > a {
+    }
+
+    header ul li:hover>a {
         opacity: 0.5;
-	}
-	
+    }
+
     header ul li:first-of-type {
         border-top: 1px solid white;
     }

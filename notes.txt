@@ -5,3 +5,5 @@
 - change services rendering into a method that renders li elements
 - change units to ems&rems
 - fix services css as I didn't provide the props earlier...
+- make separator a component
+- in contact input borders, if it's possible - cut the outer edges sharp aslant

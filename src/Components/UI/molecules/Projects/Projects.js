@@ -11,7 +11,6 @@ const Projects = props => (
     <Project />
     <Project />
     <Project />
-
     {/* tutaj map -> <Project props... ></Project>} */}
   </div>
 );
