@@ -63,6 +63,21 @@ class Contact extends React.Component {
         this.setState({formConfig: updatedForm})
     }
 
+    contactHandler = (event) => {
+        event.preventDefault();
+
+        const mail = {
+            name: this.state.formConfig.name.value,
+            email: this.state.formConfig.email.value,
+            number:this.state.formConfig.number.value,
+            message: this.state.formConfig.message.value
+        }
+        
+        /* email sending */
+        console.log(mail);
+
+    }
+
     render() {
 
         const contactForm = Object
@@ -70,6 +85,21 @@ class Contact extends React.Component {
             .map((key) => {
                 return ({id: key, element: this.state.formConfig[key]})
             });
+
+        const form = (
+            <>
+                {contactForm.map((formElement => {
+                    return <Input
+                        key={formElement.id}
+                        changed=
+                        {(event) => this.inputChangeHandler(event, formElement.id)}
+                        inputType={formElement.element.elementType}
+                        inputConfig={formElement.element.config}
+                        value={formElement.element.value}/>;
+                }))}
+            </>
+        );
+        
 
         return (
             <div className="contact">
@@ -83,17 +113,10 @@ class Contact extends React.Component {
                 <img src={separator} className="contact__separator" alt="contactSeparator"/>
 
                 <div className="contact__formwrapper">
-                    {contactForm.map((formElement => {
-                        return <Input
-                            changed=
-                            {(event) => this.inputChangeHandler(event, formElement.id)}
-                            inputType={formElement.element.elementType}
-                            inputConfig={formElement.element.config}
-                            value={formElement.element.value}/>;
-                    }))}
+                    {form}
                 </div>
 
-                <Button className="contact__submit">SUBMIT</Button>
+                <Button onClick = {this.contactHandler} className="contact__submit">SUBMIT</Button>
 
             </div>
         );
