@@ -5,3 +5,4 @@
 - change services rendering into a method that renders li elements
 - change units to ems&rems
 - fix services css as I didn't provide the props earlier...
+- add prop type validation
