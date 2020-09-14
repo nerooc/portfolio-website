@@ -3,6 +3,9 @@ import './Navbar.css';
 import logo from '../../../../Images/peace.svg';
 import '../../../../globalStyles/hamburger.css';
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 class Navbar extends React.Component {
   // metoda obsługująca menu hamburger, zrzuca i chowa dropdown menu
 
@@ -47,7 +50,11 @@ class Navbar extends React.Component {
     return (
       <header>
         <div className="nav-bar">
-          <img className="nav-bar__logo" src={logo} alt="logo" />
+          
+          <a href="#">
+            <img className="nav-bar__logo" src={logo} alt="logo" />
+          </a>
+
           <div className="nav-bar__black-bar">
             <button
               className="hamburger hamburger--collapse"
@@ -62,18 +69,52 @@ class Navbar extends React.Component {
 
           <ul className="nav-bar__links">
             <li>
-              <a href="#">About me</a>
+              <Link
+                className="nav-bar__link" 
+                activeClass="nav-bar__active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >About me</Link>
             </li>
 
             <li>
-              <a href="#">Language</a>
+              <Link
+                className="nav-bar__link" 
+                activeClass="nav-bar__active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >Language</Link>
             </li>
 
             <li>
-              <a href="#">Portfolio</a>
+              <Link
+                className="nav-bar__link" 
+                activeClass="nav-bar__active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >Portfolio</Link>
             </li>
 
-            <li className="nav-bar__button">CONTACT ME</li>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={300}
+            >
+              <li className="nav-bar__button">
+                CONTACT ME
+              </li>
+            </Link>
+            
           </ul>
         </div>
       </header>

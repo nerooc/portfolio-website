@@ -35,6 +35,10 @@ header {
     display: none;
 }
 
+.nav-bar__link{
+    cursor: pointer;
+}
+
 .nav-bar__links {
     display: flex;
     justify-content: space-around;
@@ -78,8 +82,9 @@ header ul li a:hover {
 }
 
 .nav-bar__button {
+    white-space: nowrap;
     margin-left: 1.5vw;
-    padding: 15px 9px;
+    padding: 15px 25px;
     background-color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -110,6 +115,7 @@ header ul li a:hover {
 
     .nav-bar__button {
         font-size: 13px;
+        padding: 15px 15px;
     }
 }
 
@@ -181,7 +187,6 @@ header ul li a:hover {
         font-size: 12px;
         margin: 0;
         border-radius: 0;
-        width: 100%;
         flex-basis: 10px;
         padding: 30px;
     }

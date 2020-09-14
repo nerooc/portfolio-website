@@ -38,7 +38,11 @@
 }
 
 .footer__social-media-unit{
+    transition: all 0.3s ease 0s;
+}
 
+.footer__social-media-unit:hover{
+    opacity: 0.5;
 }
 
 .footer__rights{
