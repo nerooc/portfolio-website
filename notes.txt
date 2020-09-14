@@ -7,3 +7,6 @@
 - fix services css as I didn't provide the props earlier...
 - add prop type validation
 - make mail sending more secure (cover blocking empty emails) and change keys.js values to the ones I need
+- CHANGE SVGS INTO COMPONENTS
+- ADD COMMENTS EVERYWHERE
+- take care of smooth scroll in app.css somehow

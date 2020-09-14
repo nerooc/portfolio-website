@@ -4,6 +4,7 @@ import Hero from '../../UI/organisms/Hero/Hero';
 import About from '../../UI/organisms/About/About';
 import Portfolio from '../../UI/organisms/Portfolio/Portfolio';
 import Contact from '../../UI/organisms/Contact/Contact';
+import Footer from '../../UI/molecules/Footer/Footer';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 }

@@ -6,8 +6,8 @@ import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Input from '../../atoms/Input/Input';
 import Button from '../../atoms/Button/Button';
-import separator from '../../../../Images/separatorBlack.png';
 
+import separator from '../../../../Images/separatorBlack.png';
 
 import './Contact.css';
 
@@ -167,7 +167,9 @@ class Contact extends React.Component {
                     </div>
 
                     <Button onClick = {this.contactHandler} className="contact__submit contact__emailSent">SUBMIT</Button>
+
                 </div>
+                
         );
     }
 }

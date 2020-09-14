@@ -1,0 +1,46 @@
+.footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 220px;
+    padding: 30px 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.footer__toTop a{
+    text-decoration: none;
+    color: white;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    
+    height: 45px;
+    font-size: 15px;
+    line-height: 18px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.18em;
+}
+
+.footer__social{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__social-media-unit{
+
+}
+
+.footer__rights{
+    font-family: 'Nunito';
+}
