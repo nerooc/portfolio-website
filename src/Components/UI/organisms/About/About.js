@@ -5,6 +5,7 @@ import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 import Services from '../../molecules/Services/Services';
 import separator from '../../../../Images/separatorBlack.png';
+import Skills from '../Skills/Skills';
 
 import './About.css';
 
@@ -24,6 +25,10 @@ const About = props => (
     <img src={separator} className="about__separator" alt="aboutSeparator" />
 
     <Services />
+
+    <img src={separator} className="about__separator" alt="aboutSeparator" />
+
+    <Skills />
   </div>
 );
 
