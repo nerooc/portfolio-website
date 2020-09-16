@@ -84,12 +84,11 @@ class Navbar extends React.Component {
               <Link
                 className="nav-bar__link" 
                 activeClass="nav-bar__active"
-                to="section1"
+                to="skills"
                 spy={true}
                 smooth={true}
-                offset={-70}
                 duration={300}
-              >Language</Link>
+              >Skills</Link>
             </li>
 
             <li>

@@ -10,7 +10,7 @@
 }
 
 .skills__all{
-    width: 900px;
+    width: 70%;
     padding: 70px;
 }
 
@@ -31,4 +31,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 70px 0;
+}
+
+@media (max-width: 630px) {
+    .skills__all{
+        width: 70%;
+        
+    }
+
+    .skills__h1{
+        justify-content: center;
+    }
+
+    .skills__container{
+        padding: 40px 0;
+    }
 }

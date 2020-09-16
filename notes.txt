@@ -10,3 +10,4 @@
 - CHANGE SVGS INTO COMPONENTS
 - ADD COMMENTS EVERYWHERE
 - take care of smooth scroll in app.css somehow
+- accessibility
