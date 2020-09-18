@@ -72,10 +72,10 @@ class Navbar extends React.Component {
               <Link
                 className="nav-bar__link" 
                 activeClass="nav-bar__active"
-                to="about"
+                to="about__anchor"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-120}
                 duration={300}
               >About me</Link>
             </li>
@@ -98,7 +98,6 @@ class Navbar extends React.Component {
                 to="portfolio"
                 spy={true}
                 smooth={true}
-                offset={-70}
                 duration={300}
               >Portfolio</Link>
             </li>

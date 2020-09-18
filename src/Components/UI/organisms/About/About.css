@@ -9,6 +9,13 @@
 	background-color: white;
 }
 
+.about__anchor{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
 .about__paragraph{
 	margin-top: 70px;
 	width: 70%;

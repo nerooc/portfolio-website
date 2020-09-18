@@ -11,3 +11,4 @@
 - ADD COMMENTS EVERYWHERE
 - take care of smooth scroll in app.css somehow
 - accessibility
+- make skills component be outside of the about
