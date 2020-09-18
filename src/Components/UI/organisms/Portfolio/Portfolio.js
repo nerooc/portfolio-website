@@ -12,6 +12,9 @@ const Portfolio = props => (
     </div>
     <FilterBar />
     <Projects /> {/* przekazać tablicę z projektami */}
+
+    <span className="portfolio__footer">And many more to come! 😊</span>
+
   </div>
 );
 

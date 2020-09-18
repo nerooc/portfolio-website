@@ -1,3 +1,7 @@
+.portfolio{
+    background-color: #1A1A1A;
+}
+
 .portfolio__header{
 	display: flex;
     flex-direction: column;
@@ -15,4 +19,14 @@
 
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../../../../Images/lake-background3.jpg);
     background-position: center center;
+}
+
+.portfolio__footer{
+    height: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
