@@ -107,6 +107,7 @@ class Navbar extends React.Component {
               spy={true}
               smooth={true}
               duration={300}
+              offset={20}
             >
               <li className="nav-bar__button">
                 CONTACT ME

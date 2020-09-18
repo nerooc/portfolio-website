@@ -1,11 +1,22 @@
 .project {
+    position: relative;
+
+    color: white;
+
     flex-basis: 30%;
     min-width: 300px;
     height: 15vw;
     min-height: 200px;
     /* pobawić się z tym min-height/height */
     flex-grow: 1;
-    background-color: yellow;
+
+    /* not permanent */
+    background-color: darkgreen;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
     border: black 1px solid;
     font-family: Montserrat;
 
@@ -14,6 +25,16 @@
     justify-content: center;
     align-items: center;
 }
+
+/*
+.projects:before{
+    position: absolute;
+    z-index: 2;
+    content: '';
+    height: 100%;
+    width: 100%;
+}
+*/
 
 .project__tags {
     font-weight: 600;
