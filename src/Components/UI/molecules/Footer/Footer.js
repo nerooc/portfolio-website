@@ -52,7 +52,7 @@ const Footer = props => (
                 fontWeight: '600'
             }}>@2020 Tomasz Gajda 
             </b>
-            &nbsp;All Rights Reserved.</div>
+            &nbsp;All Rights Reserved. 🔥</div>
 
     </footer>
 

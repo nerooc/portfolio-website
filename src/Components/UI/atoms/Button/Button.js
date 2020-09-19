@@ -13,7 +13,7 @@ const Button = styled.button`
   position: relative;
   padding: 13px 30px;
   color: ${props => (props.white ? 'white' : 'black')};
-  transition: all 0.5s ease 0.2s, margin-left 0.5s;
+  transition: ${props => (props.noTransition) ? 'none' : 'all 0.5s ease 0.2s, margin-left 0.5s'} ;
   cursor: pointer;
   box-sizing: border-box;
 
@@ -22,7 +22,7 @@ const Button = styled.button`
     display: block;
     position: absolute;
     top: 0;
-    left: -30px;
+    left: ${props => (props.small ? '-15px' : '-30px')};
     background-color: ${props => (props.white ? 'white' : 'black')};
     height: 100%;
     width: 2px;
@@ -33,7 +33,7 @@ const Button = styled.button`
     content: '';
     display: block;
     position: absolute;
-    right: -30px;
+    right: ${props => (props.small ? '-15px' : '-30px')};
     top: 0;
     background-color: ${props => (props.white ? 'white' : 'black')};
     height: 100%;

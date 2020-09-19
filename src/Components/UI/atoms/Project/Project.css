@@ -26,15 +26,38 @@
     align-items: center;
 }
 
-/*
-.projects:before{
+.project__container{
     position: absolute;
     z-index: 2;
-    content: '';
+    visibility: hidden;
+    transition: 0.3s;
+    opacity: 0;
     height: 100%;
     width: 100%;
 }
-*/
+
+.project__description{
+    padding: 10px 0 30px 0;
+}
+
+.project:hover .project__container{
+   visibility: visible;
+   opacity: 1;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.project__buttons {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.project__container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .project__tags {
     font-weight: 600;
