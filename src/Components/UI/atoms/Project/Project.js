@@ -12,7 +12,9 @@ const Project = props => (
 
       <div className="project__buttons">
         <Button white noTransition small>DEMO</Button>
-        <Button white noTransition small>MORE</Button>
+        <Button onClick={() => {
+                window.open(props.link);
+              }} white noTransition small>MORE</Button>
       </div>
 
     </div>
