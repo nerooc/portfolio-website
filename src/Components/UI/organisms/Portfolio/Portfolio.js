@@ -4,18 +4,52 @@ import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import FilterBar from '../../molecules/FilterBar/FilterBar';
 import './Portfolio.css';
 
+class Portfolio extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      term: '',
+      location: '',
+      filter: 'all',
+    };
 
-const Portfolio = props => (
-  <div className="portfolio">
-    <div className="portfolio__header">
-      <SectionHeader>PORTFOLIO</SectionHeader>
-    </div>
-    <FilterBar />
-    <Projects /> {/* przekazać tablicę z projektami */}
+    this.filters = {
+      Wszystkie: 'all',
+      Programowane: 'coded',
+      Projektowane: 'designed',
+    };
+  }
 
-    <span className="portfolio__footer">And many more to come! 😊</span>
+  getFilterClass = (filterOption) => {
+    if (filterOption === this.state.filter) {
+      return 'active';
+    }
+    return '';
+  }
 
-  </div>
-);
+  handleFilterChange = (filterOption) => {
+    this.setState({
+      filter: filterOption,
+    }, function () {
+      console.log(this.state.filter); 
+  });
+  }
+
+  render(){
+    return(
+      <div className="portfolio">
+        <div className="portfolio__header">
+          <SectionHeader>PORTFOLIO</SectionHeader>
+        </div>
+        <FilterBar filters={this.filters} changeFilter={this.handleFilterChange} getFilter={this.getFilterClass} />
+        <Projects filter={this.state.filter}/> {/* przekazać tablicę z projektami */}
+
+        <span className="portfolio__footer">And many more to come! 😊</span>
+      </div>
+
+    )
+
+  }
+}
 
 export default Portfolio;

@@ -18,7 +18,7 @@ class Contact extends React.Component {
                 elementType: 'input',
                 config: {
                     type: 'text',
-                    placeholder: 'ENTER YOUR NAME'
+                    placeholder: 'WPROWADŹ IMIĘ'
                 },
                 value: ''
             },
@@ -27,7 +27,7 @@ class Contact extends React.Component {
                 elementType: 'input',
                 config: {
                     type: 'email',
-                    placeholder: 'ENTER YOUR EMAIL'
+                    placeholder: 'WPROWADŹ EMAIL'
                 },
                 value: ''
             },
@@ -36,7 +36,7 @@ class Contact extends React.Component {
                 elementType: 'input',
                 config: {
                     type: 'number',
-                    placeholder: 'PHONE NUMBER'
+                    placeholder: 'NUMER TELEFONU'
                 },
                 value: ''
             },
@@ -45,7 +45,7 @@ class Contact extends React.Component {
                 elementType: 'textarea',
                 config: {
                     type: 'text',
-                    placeholder: 'YOUR MESSAGE'
+                    placeholder: 'WIADOMOŚĆ'
                 },
                 value: ''
             }
@@ -136,15 +136,15 @@ class Contact extends React.Component {
         let emailResult = null;
 
         if(this.state.email.emailBeingSent){
-            emailResult = <div className="contact__email"> The email is being sent... </div>;
+            emailResult = <div className="contact__email"> Email jest wysyłany... </div>;
 
             if (this.state.email.emailSent) {
                 emailResult = this.state.email.emailSuccess
                     ? <div className="contact__email emailSent">
-                            The email was sent successfully!
+                            Email został wysłany!
                         </div>
                     : <div className="contact__email emailError">
-                        There has been an error when sending the email!
+                            Pojawił się problem przy wysyłaniu...
                         </div>
             }
         }
@@ -152,7 +152,7 @@ class Contact extends React.Component {
         return (
             
                 <div className="contact">
-                    <SectionHeader className="contact__header">CONTACT</SectionHeader>
+                    <SectionHeader className="contact__header">KONTAKT</SectionHeader>
 
                     <Paragraph className="contact__paragraph">
                         My name is Tomasz Gajda, I’m a third year Applied Computer Science student at
@@ -166,7 +166,7 @@ class Contact extends React.Component {
                         {emailResult} 
                     </div>
 
-                    <Button onClick = {this.contactHandler} className="contact__submit contact__emailSent">SUBMIT</Button>
+                    <Button bold onClick = {this.contactHandler} className="contact__submit contact__emailSent">WYŚLIJ</Button>
 
                 </div>
                 

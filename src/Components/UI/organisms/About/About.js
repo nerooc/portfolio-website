@@ -13,15 +13,14 @@ const About = props => (
   <div className="about">
     <div className="about__anchor">
       <Fade top duration={2500} distance="30px">
-        <SectionHeader className="about__header">ABOUT ME</SectionHeader>
+        <SectionHeader className="about__header">O MNIE</SectionHeader>
       </Fade>
 
       <Paragraph className="about__paragraph">
-        My name is Tomasz Gajda, I’m a third year Applied Computer Science student
-        at AGH University of Science and Technology in Cracow, Poland.
+      Nazywam się Tomasz Gajda, jestem na trzecim roku Informatyki Stosowanej na Akademii Górniczo-Hutniczej w Krakowie. Od roku uczę się technologii Front-End’owych i jestem pewny, że jest to moje miejsce w branży. Członkostwo w kole naukowym rozwinęło moje umiejętności projektowania, co bardzo szybko przerodziło się w nowe hobby. Swobodnie posługuję się językiem angielskim (w mowie i w piśmie) oraz hiszpańskim w stopniu średnim. Poza design’owaniem i programowaniem stron internetowych, moją pasją jest wszelkiego rodzaju motorsport - od rajdów po samą królówą sportów motorowych - formułę 1. 
       </Paragraph>
       <Fade bottom duration={2500} distance="30px">
-        <Button className="about__button">EXPLORE</Button>
+        <Button className="about__button">SPRAWDŹ</Button>
       </Fade>
       <img src={separator} className="about__separator" alt="aboutSeparator" />
 

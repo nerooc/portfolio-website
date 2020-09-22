@@ -8,7 +8,7 @@ const Button = styled.button`
   /* button style properties */
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: ${props => (props.bold ? '900' : '600')};
   font-size: 15px;
   position: relative;
   padding: 13px 30px;
@@ -25,7 +25,7 @@ const Button = styled.button`
     left: ${props => (props.small ? '-15px' : '-30px')};
     background-color: ${props => (props.white ? 'white' : 'black')};
     height: 100%;
-    width: 2px;
+    width: ${props => (props.bold ? '4px' : '2px')};
     transition: all 0.2s ease 0s;
   }
 
@@ -37,7 +37,7 @@ const Button = styled.button`
     top: 0;
     background-color: ${props => (props.white ? 'white' : 'black')};
     height: 100%;
-    width: 2px;
+    width: ${props => (props.bold ? '4px' : '2px')};
     transition: all 0.2s ease 0s;
   }
 

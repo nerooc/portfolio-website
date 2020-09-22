@@ -18,14 +18,7 @@ class Header extends React.Component {
           </Fade>
           <Fade left duration={2500} distance="30px">
             <p className="itb__p">
-              Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
-              varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
-              quis libero viverra facilisis ut ac est. Morbi commodo, eros in
-              dignissim tempus, lacus odio rutrum augue, in semper sem magna
-              quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit
-              amet elit. Nunc egestas nisi eget enim gravida facilisis.
-              Pellentesque laoreet varius turpis vel pharetra. Ut ante justo,
-              consequat vitae elementum tempor, accumsan nec eros.
+            Jestem jednym z członków koła naukowego skupiającego fascynatów internetu i nowych technologii. W ITberries zajmujemy się projektowaniem i tworzeniem stron internetowych, jak i aplikacji. Oprócz projektów, naszym największym przedsięwzięciem jest konferencja Ciemna Strona UX, którą organizujemy już szósty raz. Praca w kole na stanowisku Front-End Developera zdecydowanie rozwinęła moje umiejętności pracy w grupie, jak i  pracy pod presją czasu.  Jeśli chcesz dowiedzieć się więcej o kole, kliknij w poniższy przycisk!
             </p>
           </Fade>
           <Fade left duration={2500} distance="30px">
@@ -36,7 +29,7 @@ class Header extends React.Component {
                 window.open('https://www.facebook.com/ITberries/');
               }}
             >
-              READ MORE
+              WIĘCEJ!
             </Button>
           </Fade>
         </div>

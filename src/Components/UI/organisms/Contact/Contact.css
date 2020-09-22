@@ -70,3 +70,13 @@
     border: 3px solid #b51f0e !important;
     color:darkred !important;
 }
+
+@media (max-width: 1000px) {
+    .contact{
+        padding: 70px 0;
+    }
+
+    .contact__formwrapper{
+        width: 60%;
+    }
+}

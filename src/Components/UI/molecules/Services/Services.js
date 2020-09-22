@@ -9,19 +9,16 @@ import development from '../../../../Images/development.png';
 
 const Services = props => (
   <div className="services">
-    <Service title="DESIGN" source={design}>
-      I can design the site based on your needs and suggestions. I can also
-      design the site from scratch and consult you during the job.
+    <Service title="PROJEKT" source={design}>
+      Mogę zaprojektować stronę na podstawie Twoich potrzeb i sugestii. Mogę również stworzyć ją od podstaw, konsultując się z Tobą w trakcie pracy.
     </Service>
 
-    <Service title="DEVELOPMENT" source={development}>
-      I can design the site based on your needs and suggestions. I can also
-      design the site from scratch and consult you during the job.
+    <Service title="PROGRAMOWANIE" source={development}>
+      Na podstawie stworzonego przeze mnie lub podesłanego projektu, mogę zaprogramować stronę by była w pełni funkcjonalna i responsywna.
     </Service>
 
-    <Service title="MAINTENANCE" source={maintenance}>
-      I can design the site based on your needs and suggestions. I can also
-      design the site from scratch and consult you during the job.
+    <Service title="KONSERWACJA" source={maintenance}>
+      W razie wszelkich problemów lub potrzeby zmian, mogę wprowadzić nowe funkcjonalności.
     </Service>
   </div>
 );

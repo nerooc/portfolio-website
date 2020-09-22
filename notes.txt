@@ -12,3 +12,4 @@
 - take care of smooth scroll in app.css somehow
 - accessibility
 - make skills component be outside of the about
+- add an optional hover for skill elements (scale(1.2))

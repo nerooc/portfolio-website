@@ -153,13 +153,15 @@ class Projects extends React.Component{
 
         {projects.map((project) => {
 
-          console.log(project);
-          return <Project
+
+          if(this.props.filter === "all" || project.tags.includes(this.props.filter)){
+            return <Project
                     key={project.id} 
                     image={project.image} 
                     tags={project.tags} 
                     name={project.name}
                     >{project.description}</Project>  
+          }
         })}
 
         {/* tutaj map -> <Project props... ></Project>} */}
