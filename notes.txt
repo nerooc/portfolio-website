@@ -13,3 +13,4 @@
 - accessibility
 - make skills component be outside of the about
 - add an optional hover for skill elements (scale(1.2))
+- make mailresult a component

@@ -3,14 +3,24 @@ import './Input.css';
 
 const Input = (props) => {
     let inputElement = null;
+    let classesArray = ['input'];
+
+    if(!props.valid && props.touched){
+        classesArray.push('invalid');
+    }
+
+    if(!props.valid && props.highlighted){
+        classesArray.push('invalidHighlight');
+    }
 
     switch (props.inputType) {
         case('input'):
-            inputElement = <input onChange={props.changed} className="input" value={props.value} {...props.inputConfig}/>;
+            inputElement = <input onChange={props.changed} className={classesArray.join(' ')} value={props.value} {...props.inputConfig}/>;
             break;
 
         case('textarea'):
-            inputElement = <textarea onChange={props.changed} className="input textarea" value={props.value} {...props.inputConfig}/>;
+            classesArray.push('textarea');
+            inputElement = <textarea onChange={props.changed} className={classesArray.join(' ')} value={props.value} {...props.inputConfig}/>;
             break;
         //case ():
         default:

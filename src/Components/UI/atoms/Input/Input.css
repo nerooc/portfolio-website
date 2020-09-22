@@ -1,5 +1,4 @@
 .input {
-
     box-sizing: border-box;
 
     border: none;
@@ -37,4 +36,40 @@
     height: 180px;
     padding: 10px;
     resize: none;
+}
+
+.invalid{
+    border-bottom: 5px solid rgb(124, 20, 20);
+    border-left: 5px solid rgb(124, 20, 20);
+    background-color: rgb(250, 188, 182);
+}
+
+.invalidHighlight{
+    border-bottom: 5px solid rgb(177, 28, 28);
+    border-left: 5px solid rgb(177, 28, 28);
+    background-color: rgb(255, 175, 168);
+    animation: wiggle 0.5s;
+}
+
+
+@keyframes wiggle{
+    0%{
+        transform: translateX(-5px)
+    }
+
+    25%{
+        transform: translateX(5px)
+    }
+
+    50%{
+        transform: translateX(-5px)
+    }
+
+    75%{
+        transform: translateX(5px)
+    }
+
+    100%{
+        transform: translateX(-5px)
+    }
 }

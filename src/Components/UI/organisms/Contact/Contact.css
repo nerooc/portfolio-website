@@ -35,6 +35,15 @@
     flex-direction: column;
 	margin-top: 70px;
     width: 600px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    line-height: 20px;
+}
+
+.contact__formwrapper--highlighted{
+    color: rgb(177, 28, 28);
+    transition: 0.2s ease-in;
 }
 
 .contact__submit{
@@ -52,6 +61,8 @@
     box-sizing: border-box;
     width: 100%;
 
+    font-size: auto;
+    font-weight: auto;
     font-family: 'Montserrat';
 
     background-color:#bfbfbf;

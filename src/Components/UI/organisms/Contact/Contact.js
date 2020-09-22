@@ -18,18 +18,28 @@ class Contact extends React.Component {
                 elementType: 'input',
                 config: {
                     type: 'text',
-                    placeholder: 'WPROWADŹ IMIĘ'
+                    placeholder: 'WPROWADŹ IMIĘ*'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false,
+                touched: false                
             },
 
             email: {
                 elementType: 'input',
                 config: {
                     type: 'email',
-                    placeholder: 'WPROWADŹ EMAIL'
+                    placeholder: 'WPROWADŹ EMAIL*'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false,
+                touched: false                
             },
 
             number: {
@@ -38,16 +48,26 @@ class Contact extends React.Component {
                     type: 'number',
                     placeholder: 'NUMER TELEFONU'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: false
+                },
+                
+                valid: true,
             },
 
             message: {
                 elementType: 'textarea',
                 config: {
                     type: 'text',
-                    placeholder: 'WIADOMOŚĆ'
+                    placeholder: 'WIADOMOŚĆ*'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false ,
+                touched: false                
             }
         },
 
@@ -55,8 +75,20 @@ class Contact extends React.Component {
             emailBeingSent: false,
             emailSent: false,
             emailSuccess: null
-        }
+        },
+
+        highlighted: false
         
+    }
+
+    handleValidation = (value, validation) => {
+        let isValid = true;
+        
+        if(validation.required){
+            isValid = value.trim() !== '';
+        }
+
+        return isValid;
     }
 
     inputChangeHandler = (event, elementID) => {
@@ -69,46 +101,74 @@ class Contact extends React.Component {
         }
 
         updatedFormElement.value = event.target.value;
+        updatedFormElement.valid = this.handleValidation(updatedFormElement.value, updatedFormElement.validation);
+        updatedFormElement.touched = true;
         updatedForm[elementID] = updatedFormElement;
 
-        this.setState({formConfig: updatedForm})
+        this.setState({formConfig: updatedForm, highlighted: false})
     }
 
     contactHandler = (event) => {
         event.preventDefault();
 
+        const form = this.state.formConfig;
+
         const mail = {
-            name: this.state.formConfig.name.value,
-            email: this.state.formConfig.email.value,
-            number:this.state.formConfig.number.value,
-            message: this.state.formConfig.message.value
+            name: form.name.value,
+            email: form.email.value,
+            number: form.number.value,
+            message: form.message.value
         }
 
-        this.setState({
-            email: {
-                emailBeingSent: true
-            }
-        })
+        console.log(form.name);
 
-        emailjs.send('Gmail', template, mail, userId)
-            .then((result) => {
-                this.setState({
-                    email: {
-                        emailBeingSent: true,
-                        emailSent: true,
-                        emailSuccess: true
-                    }
-                })
-            }, (error) => {
-                this.setState({
-                    email: {
-                        emailBeingSent: true,
-                        emailSent: true,
-                        emailSuccess: false
-                    }
-                })
-                console.log(error.text);
-            });
+        if(form.name.valid && form.email.valid && form.number.valid && form.message.valid){
+        
+            this.setState({
+                email: {
+                    emailBeingSent: true
+                }
+            })
+    
+            emailjs.send('Gmail', template, mail, userId)
+                .then((result) => {
+                    this.resetElementsValues();
+                    this.setState({
+                        email: {
+                            emailBeingSent: true,
+                            emailSent: true,
+                            emailSuccess: true
+                        }
+                    })
+                }, (error) => {
+                    this.setState({
+                        email: {
+                            emailBeingSent: true,
+                            emailSent: true,
+                            emailSuccess: false
+                        }
+                    })
+                    console.log(error.text);
+                });
+        } else {
+            this.setState({highlighted: true});
+        }
+    }
+
+    resetElementsValues = () => {
+        const updatedForm = {
+            ...this.state.formConfig
+        }
+
+        for(let element in updatedForm){
+            let updatedFormElement = {
+                ...updatedForm[element]
+            }
+            updatedFormElement.value = '';
+            updatedForm[element] = updatedFormElement;
+        }
+
+        this.setState({formConfig: updatedForm});
     }
 
     render() {
@@ -124,11 +184,16 @@ class Contact extends React.Component {
                 {contactForm.map((formElement => {
                     return <Input
                         key={formElement.id}
+                        valid={formElement.element.valid}
                         changed=
                         {(event) => this.inputChangeHandler(event, formElement.id)}
                         inputType={formElement.element.elementType}
                         inputConfig={formElement.element.config}
-                        value={formElement.element.value}/>;
+                        value={formElement.element.value}
+                        touched={formElement.element.touched}
+                        highlighted={this.state.highlighted}
+                        />;
+                        
                 }))}
             </div>
         );
@@ -149,6 +214,12 @@ class Contact extends React.Component {
             }
         }
 
+        let formWrapperClasses = ['contact__formwrapper'];
+
+        if(this.state.highlighted){
+            formWrapperClasses.push('contact__formwrapper--highlighted');
+        }
+
         return (
             
                 <div className="contact">
@@ -161,8 +232,9 @@ class Contact extends React.Component {
 
                     <img src={separator} className="contact__separator" alt="contactSeparator"/>
 
-                    <div className="contact__formwrapper">
+                    <div className={formWrapperClasses.join(' ')}>
                         {form}
+                        Fields marked with an asterisk must be filled.
                         {emailResult} 
                     </div>
 
