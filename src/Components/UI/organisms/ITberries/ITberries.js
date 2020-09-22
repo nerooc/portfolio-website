@@ -18,7 +18,7 @@ class Header extends React.Component {
           </Fade>
           <Fade left duration={2500} distance="30px">
             <p className="itb__p">
-            Jestem jednym z członków koła naukowego skupiającego fascynatów internetu i nowych technologii. W ITberries zajmujemy się projektowaniem i tworzeniem stron internetowych, jak i aplikacji. Oprócz projektów, naszym największym przedsięwzięciem jest konferencja Ciemna Strona UX, którą organizujemy już szósty raz. Praca w kole na stanowisku Front-End Developera zdecydowanie rozwinęła moje umiejętności pracy w grupie, jak i  pracy pod presją czasu.  Jeśli chcesz dowiedzieć się więcej o kole, kliknij w poniższy przycisk!
+            I am one of the members of a scientific club that brings together enthusiasts of the Internet and new technologies. At ITberries, we design and develop websites and web applications. Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, which we are organizing for the sixth time. Working in a club as a Front-End Developer definitely developed my skills in group work and working under time pressure. If you want to know more about us, click the button below!
             </p>
           </Fade>
           <Fade left duration={2500} distance="30px">
@@ -29,7 +29,7 @@ class Header extends React.Component {
                 window.open('https://www.facebook.com/ITberries/');
               }}
             >
-              WIĘCEJ!
+              MORE
             </Button>
           </Fade>
         </div>

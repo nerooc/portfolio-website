@@ -17,6 +17,7 @@
 }
 
 .about__paragraph{
+	text-align: justify;
 	margin-top: 70px;
 	width: 70%;
 	max-width: 760px;

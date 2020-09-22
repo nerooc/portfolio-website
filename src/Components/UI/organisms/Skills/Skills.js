@@ -29,10 +29,10 @@ import './Skills.css';
 
 const Skills = props => (
   <div className="skills">
-      <SectionHeader className="skills__header">UMIEJĘTNOŚCI</SectionHeader>
+      <SectionHeader className="skills__header">SKILLS</SectionHeader>
       
       <div className="skills__all">
-        <h1 className="skills__h1">KORZYSTAM:</h1>
+        <h1 className="skills__h1">USING NOW:</h1>
         <div className="skills__container">
             <Skill source={html_icon}>HTML5</Skill>
             <Skill source={css_icon}>CSS3</Skill>
@@ -44,7 +44,7 @@ const Skills = props => (
             <Skill source={figma_icon}>Figma</Skill>
         </div>
 
-        <h1 className="skills__h1">UCZĘ SIĘ:</h1>
+        <h1 className="skills__h1">LEARNING:</h1>
         <div className="skills__container">
             <Skill source={node_icon}>Node.js</Skill>
             <Skill source={mysql_icon}>MySQL</Skill>
@@ -52,7 +52,7 @@ const Skills = props => (
             <Skill source={ts_icon}>Typescript</Skill>
         </div>
 
-        <h1 className="skills__h1">INNE:</h1>
+        <h1 className="skills__h1">DIFFERENT:</h1>
         <div className="skills__container">
             <Skill source={english_icon}>English C1/C2</Skill>
             <Skill source={spanish_icon}>Spanish B1/B2</Skill>

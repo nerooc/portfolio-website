@@ -13,11 +13,11 @@ const About = props => (
   <div className="about">
     <div className="about__anchor">
       <Fade top duration={2500} distance="30px">
-        <SectionHeader className="about__header">O MNIE</SectionHeader>
+        <SectionHeader className="about__header">ABOUT ME</SectionHeader>
       </Fade>
 
       <Paragraph className="about__paragraph">
-      Nazywam się Tomasz Gajda, jestem na trzecim roku Informatyki Stosowanej na Akademii Górniczo-Hutniczej w Krakowie. Od roku uczę się technologii Front-End’owych i jestem pewny, że jest to moje miejsce w branży. Członkostwo w kole naukowym rozwinęło moje umiejętności projektowania, co bardzo szybko przerodziło się w nowe hobby. Swobodnie posługuję się językiem angielskim (w mowie i w piśmie) oraz hiszpańskim w stopniu średnim. Poza design’owaniem i programowaniem stron internetowych, moją pasją jest wszelkiego rodzaju motorsport - od rajdów po samą królówą sportów motorowych - formułę 1. 
+      My name is Tomasz Gajda, I'm a third year Applied Computer Science student at the AGH University of Science and Technology in Krakow. I have been learning Front-End technologies for a year and this time was just enough for me to make sure that this is my place in the industry. <br/><br/>Membership in the science club developed my design skills, which quickly turned into a new hobby. I am fluent in English (spoken and written) and intermediate Spanish. Apart from designing and programming websites, my passion is all kinds of motorsport - from rallies to the very king of motorsport - formula 1.
       </Paragraph>
       <Fade bottom duration={2500} distance="30px">
         <Button className="about__button">SPRAWDŹ</Button>

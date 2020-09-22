@@ -14,9 +14,9 @@ class Portfolio extends React.Component{
     };
 
     this.filters = {
-      Wszystkie: 'all',
-      Programowane: 'coded',
-      Projektowane: 'designed',
+      All: 'all',
+      Coded: 'coded',
+      Designed: 'designed',
     };
   }
 

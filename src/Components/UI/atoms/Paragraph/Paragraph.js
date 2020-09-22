@@ -6,7 +6,6 @@ const SectionHeader = styled.p`
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  text-align: center;
 `;
 
 export default SectionHeader;
