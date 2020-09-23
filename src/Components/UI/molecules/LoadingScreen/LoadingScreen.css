@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .loading__container{
     position: absolute;
     z-index: 100;
@@ -7,51 +11,81 @@
     align-items: center;
 
     background-color: #1a1a1a;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+
+
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s forwards;
 }
 
 .loading__logo{
     height: 300px;
     width: 300px;
-    animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940), rotate-center 5s linear 2s, slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 7s forwards;
-
 }
 
-@-webkit-keyframes slide-in-top {
-    0% {
-        -webkit-transform: translateY(-1000px);
-        transform: translateY(-1000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
+.loader {
+	position: relative;
+	margin: 75px auto;
+	width: 150px;
+	height: 150px;
+	display: block;
+	overflow: hidden;
 }
+
+.loading__wrapper{
+    animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.loader div{
+    height: 100%;
+}
+
+.loader1, .loader1 div {
+	border-radius: 50%;
+	padding: 8px;
+	border: 2px solid transparent;
+	animation: rotate linear 3.5s;
+	border-top-color: white;
+	border-bottom-color: black;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0deg);
+		border-top-color: white;
+	}
+	50% {
+		transform: rotate(180deg);
+		border-top-color: black;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-top-color: white;
+	}
+}
+
 @keyframes slide-in-top {
     0% {
-        -webkit-transform: translateY(-1000px);
-        transform: translateY(-1000px);
-        opacity: 0;
+      transform: translateY(-1000px);
+      opacity: 0;
     }
     100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes rotate-center {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(720deg);
+      transform: translateY(0);
+      opacity: 1;
     }
   }
-
 
   @keyframes slide-out-top {
     0% {
@@ -63,4 +97,3 @@
       opacity: 0;
     }
   }
-  

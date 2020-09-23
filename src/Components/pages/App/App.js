@@ -10,18 +10,44 @@ import LoadingScreen from '../../UI/molecules/LoadingScreen/LoadingScreen';
 
 import './App.css';
 
-function App() {
-  return (
-    <>
-    <LoadingScreen/>
-      <Hero />
-      <ITberries />
-      <About />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
-  );
+
+class App extends React.Component {
+  state = {
+    loading: true
+  }
+
+  componentDidMount() {
+    this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500);
+  }
+
+  componentWillUnmount(){
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
+  }
+
+  render() {
+      
+
+      /*let loadingScreen = this.state.loading
+          ? <LoadingScreen/>
+          : null; */
+
+      let loadingScreen = null;    
+
+      return (
+        <> 
+          {loadingScreen}
+          <Hero/> 
+          <ITberries /> 
+          <About/> 
+          <Portfolio /> 
+          <Contact/> 
+          <Footer /> 
+        </>
+      );
+  }
 }
 
 export default App;
