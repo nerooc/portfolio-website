@@ -29,7 +29,6 @@ class App extends React.Component {
 
   render() {
       
-
       /*let loadingScreen = this.state.loading
           ? <LoadingScreen/>
           : null; */

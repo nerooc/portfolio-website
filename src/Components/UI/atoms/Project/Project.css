@@ -1,34 +1,22 @@
 .project {
     position: relative;
-
     color: white;
-
+    flex:auto;
     flex-basis: 30%;
-    min-width: 350px;
-    height: 22vw;
-    /* pobawić się z tym min-height/height */
+    min-width: 300px;
     flex-grow: 1;
-
-    /* not permanent */
-    background-color: black;
-
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-
-    border: black 4px solid;
-    font-family: Montserrat;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-
     transition: 0.8s;
+}
+
+.project__image{
+    width: 100%;
+    height: auto;
 }
 
 .project__container{
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: 2;
     visibility: hidden;
     transition: 0.3s;
@@ -83,7 +71,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.20538em;
+    letter-spacing: 0.15em;
 }
 
 
