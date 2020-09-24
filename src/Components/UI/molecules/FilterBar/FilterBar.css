@@ -15,6 +15,7 @@
 
 .filter li {
 	cursor: pointer;
+	font-family: Montserrat;
 	padding-top: 30px;
 	width: 200px;
 	height: 55px;
