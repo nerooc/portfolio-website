@@ -14,7 +14,7 @@ const Project = props => (
       <div className="project__buttons">
         <Button white noTransition small>DEMO</Button>
         <Button onClick={() => {
-                window.open(props.link);
+                window.open(props.ghlink);
               }} white noTransition small>MORE</Button>
       </div>
 

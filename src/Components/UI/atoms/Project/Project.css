@@ -3,14 +3,16 @@
     color: white;
     flex:auto;
     flex-basis: 30%;
-    min-width: 300px;
+    min-width: 400px;
     flex-grow: 1;
     transition: 0.8s;
+    border: black 4px solid;
+
 }
 
 .project__image{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .project__container{
@@ -75,18 +77,3 @@
 }
 
 
-@media (max-width: 1091px) and (min-width: 732px) {
-	
-	.project{
-        height: 31vw;
-    }
-
-}
-
-@media (max-width: 732px) {
-	
-	.project{
-        height: 60vw;
-    }
-
-}
