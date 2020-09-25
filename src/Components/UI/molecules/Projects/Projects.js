@@ -89,7 +89,7 @@ class Projects extends React.Component{
 
       csux:{
         name: 'CSUX.pl',
-        tags: ['coded', 'designed?'],
+        tags: ['coded'],
         image: csux__img,
         description: 'Strona konferencji Ciemna Strona UX',
         ghlink: 'https://github.com/nerooc/ciemnastronaux'
@@ -97,7 +97,7 @@ class Projects extends React.Component{
 
       neroCars:{
         name: 'Nero Cars Rental',
-        tags: ['coded', 'designed'],
+        tags: ['designed'],
         image: nerocars__img,
         description: 'Sports car rental website',
         ghlink: 'https://github.com/nerooc/nero-cars/tree/master/src'
@@ -121,7 +121,7 @@ class Projects extends React.Component{
 
       projectRunes:{
         name: 'Project Runes',
-        tags: ['coded', 'designed'],
+        tags: ['designed'],
         image: runes__img,
         description: 'Modern website about Runes',
         ghlink: 'https://github.com/nerooc/slider-component'
@@ -129,7 +129,7 @@ class Projects extends React.Component{
 
       itberries:{
         name: 'itberries.pl',
-        tags: ['coded', 'designed'],
+        tags: ['designed'],
         image: itberries__img,
         description: 'Strona koła naukowego ITberries',
         ghlink: 'https://www.facebook.com/ITberries/'
@@ -137,7 +137,7 @@ class Projects extends React.Component{
 
       integra:{
         name: 'Integra',
-        tags: ['coded'],
+        tags: ['designed'],
         image: integra__img,
         description: 'Aplikacja służąca do integracji',
         ghlink: 'https://www.facebook.com/ITberries/'

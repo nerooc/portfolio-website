@@ -28,7 +28,7 @@
 }
 
 .about__separator{
-    margin-top: 70px;
+    margin-top: 100px;
     width: 200px;
     height: auto;
 }
@@ -37,7 +37,7 @@
 @media (max-width: 630px) {
 	
 	.about {
-		padding: 70px 0 90px 0;
+		padding: 70px 0 0 0;
 	}
 
 	.about__paragraph{
