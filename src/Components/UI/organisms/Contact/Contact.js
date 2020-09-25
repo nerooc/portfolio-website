@@ -226,8 +226,7 @@ class Contact extends React.Component {
                     <SectionHeader className="contact__header">CONTACT</SectionHeader>
 
                     <Paragraph className="contact__paragraph">
-                        My name is Tomasz Gajda, I’m a third year Applied Computer Science student at
-                        AGH University of Science and Technology in Cracow, Poland.
+                        If you are interested in cooperation or would like to hire me for your project, please contact me by e-mail or use the form below.
                     </Paragraph>
 
                     <img src={separator} className="contact__separator" alt="contactSeparator"/>

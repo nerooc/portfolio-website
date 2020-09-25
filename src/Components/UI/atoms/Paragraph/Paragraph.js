@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const SectionHeader = styled.p`
-  font-family: Open Sans;
+const Paragraph = styled.p`
+  font-family: Raleway;
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
 `;
 
-export default SectionHeader;
+export default Paragraph;
