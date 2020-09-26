@@ -12,6 +12,7 @@
 .skills__all{
     width: 70%;
     padding: 70px;
+    padding-top: 130px;
 }
 
 .skills__h1{
@@ -21,7 +22,6 @@
     font-size: 30px;
     line-height: 37px;
     display: flex;
-    align-items: center;
     letter-spacing: 0.185em;
 }
 
