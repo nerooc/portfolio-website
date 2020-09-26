@@ -13,6 +13,7 @@ const Project = props => (
 
       <div className="project__buttons">
         <Button white noTransition small>DEMO</Button>
+        <span className="project__divider"></span>
         <Button onClick={() => {
                 window.open(props.ghlink);
               }} white noTransition small>MORE</Button>

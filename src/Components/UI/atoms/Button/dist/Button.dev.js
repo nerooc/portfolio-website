@@ -1,26 +1,16 @@
-Object.defineProperty(exports, '__esModule', {
-  value: true,
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
-const _styledComponents = _interopRequireDefault(require('styled-components'));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  const data = _taggedTemplateLiteral([
-    "\n\t/* button reset */\n\tbackground: none repeat scroll 0 0 transparent;\n\tborder: medium none;\n\t\n\t/* button style properties */\n\tdisplay: block;\n\tfont-family: 'Montserrat', sans-serif;\n\tfont-weight: 600;\n\tfont-size: 15px;\n\tposition: relative;\n\tpadding: 13px 30px;\n\tcolor: ",
-    ";\n\ttransition: all 0.5s ease 0.2s, margin-left 0.5s;\n\tcursor: pointer;\n\tbox-sizing: border-box;\n\n\n\t&::before {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: -30px;\n\t\tbackground-color: ",
-    ";\n\t\theight: 100%;\n\t\twidth: 2px;\n\t\ttransition: all 0.2s ease 0s;\n\t}\n\n\t&::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\tposition: absolute;\n\t\tright: -30px;\n\t\ttop: 0;\n\t\tbackground-color: ",
-    ';\n\t\theight: 100%;\n\t\twidth: 2px;\n\t\ttransition: all 0.2s ease 0s;\n\t}\n\n\t&:hover::before {\n\t\tleft: 0;\n\t}\n\n\t&:hover::after {\n\t\tright: 0;\n\t}\n\n\t&:hover {\n\t\tcolor: ',
-    ';\n\t\tbackground-color: ',
-    ';\n\t\tfont-weight: 600;\n\t\t-webkit-box-shadow: inset 0px 0px 0px 2px ',
-    ';\n\t\t-moz-box-shadow: inset 0px 0px 0px 2px ',
-    ';\n\t\tbox-shadow: inset 0px 0px 0px 2px ',
-    ';\n\t\tcursor: pointer;\n\n\t\tmargin-left: 0;\n\t}\n\n\t&:focus { outline: none; }\n\n',
-  ]);
+  var data = _taggedTemplateLiteral(["\n  /* button reset */\n  background: none repeat scroll 0 0 transparent;\n  border: medium none;\n\n  /* button style properties */\n  display: block;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: ", ";\n  font-size: 15px;\n  position: relative;\n  padding: ", ";\n  color: ", ";\n  transition: ", " ;\n  cursor: pointer;\n  box-sizing: border-box;\n\n  &::before {\n    content: '';\n    display: block;\n    position: absolute;\n    top: 0;\n    left: ", ";\n    background-color: ", ";\n    height: 100%;\n    width: ", ";\n    transition: all 0.2s ease 0s;\n  }\n\n  &::after {\n    content: '';\n    display: block;\n    position: absolute;\n    right: ", ";\n    top: 0;\n    background-color: ", ";\n    height: 100%;\n    width: ", ";\n    transition: all 0.2s ease 0s;\n  }\n\n  &:hover::before {\n    left: 0;\n  }\n\n  &:hover::after {\n    right: 0;\n  }\n\n  &:hover {\n    color: ", ";\n    background-color: ", ";\n    font-weight: 600;\n    -webkit-box-shadow: inset 0px 0px 0px 2px\n      ", ";\n    -moz-box-shadow: inset 0px 0px 0px 2px\n      ", ";\n    box-shadow: inset 0px 0px 0px 2px\n      ", ";\n    cursor: pointer;\n\n    margin-left: 0;\n  }\n\n  &:focus {\n    outline: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29,42 +19,39 @@ function _templateObject() {
   return data;
 }
 
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })
-  );
-}
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-const Button = _styledComponents.default.button(
-  _templateObject(),
-  function(props) {
-    return props.white ? 'white' : 'black';
-  },
-  function(props) {
-    return props.white ? 'white' : 'black';
-  },
-  function(props) {
-    return props.white ? 'white' : 'black';
-  },
-  function(props) {
-    return props.white ? 'black' : 'white';
-  },
-  function(props) {
-    return props.white ? 'white' : 'black';
-  },
-  function(props) {
-    return props.white ? 'white' : 'black';
-  },
-  function(props) {
-    return props.white ? 'white' : 'black';
-  },
-  function(props) {
-    return props.white ? 'white' : 'black';
-  }
-);
+var Button = _styledComponents["default"].button(_templateObject(), function (props) {
+  return props.bold ? '900' : '600';
+}, function (props) {
+  return props.small ? '8px 15px' : '13px 30px';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+}, function (props) {
+  return props.noTransition ? 'none' : 'all 0.5s ease 0.2s, margin-left 0.5s';
+}, function (props) {
+  return props.small ? '-7px' : '-30px';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+}, function (props) {
+  return props.bold ? '4px' : '2px';
+}, function (props) {
+  return props.small ? '-7px' : '-30px';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+}, function (props) {
+  return props.bold ? '4px' : '2px';
+}, function (props) {
+  return props.white ? 'black' : 'white';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+}, function (props) {
+  return props.white ? 'white' : 'black';
+});
 
-const _default = Button;
-exports.default = _default;
+var _default = Button;
+exports["default"] = _default;

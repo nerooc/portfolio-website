@@ -11,7 +11,7 @@ const Button = styled.button`
   font-weight: ${props => (props.bold ? '900' : '600')};
   font-size: 15px;
   position: relative;
-  padding: 13px 30px;
+  padding: ${props => (props.small ? '8px 15px' : '13px 30px')};
   color: ${props => (props.white ? 'white' : 'black')};
   transition: ${props => (props.noTransition) ? 'none' : 'all 0.5s ease 0.2s, margin-left 0.5s'} ;
   cursor: pointer;
@@ -22,7 +22,7 @@ const Button = styled.button`
     display: block;
     position: absolute;
     top: 0;
-    left: ${props => (props.small ? '-15px' : '-30px')};
+    left: ${props => (props.small ? '-7px' : '-30px')};
     background-color: ${props => (props.white ? 'white' : 'black')};
     height: 100%;
     width: ${props => (props.bold ? '4px' : '2px')};
@@ -33,7 +33,7 @@ const Button = styled.button`
     content: '';
     display: block;
     position: absolute;
-    right: ${props => (props.small ? '-15px' : '-30px')};
+    right: ${props => (props.small ? '-7px' : '-30px')};
     top: 0;
     background-color: ${props => (props.white ? 'white' : 'black')};
     height: 100%;

@@ -13,12 +13,9 @@ import jammming__img from '../../../../Images/projects/jammming.png';
 import csux__img from '../../../../Images/projects/csux.png';
 import sgo__img from '../../../../Images/projects/sgo.png';
 import nerocars__img from '../../../../Images/projects/nerocars.png';
-import integra__img from '../../../../Images/projects/integra.png';
 import itberries__img from '../../../../Images/projects/itberries.png';
 import runes__img from '../../../../Images/projects/runes.png';
 import discordbot__img from '../../../../Images/projects/discordbot.jpg';
-
-import testimg from '../../../../Images/cosmic-background.jpg';
 
 class Projects extends React.Component{
   state = {
@@ -51,7 +48,7 @@ class Projects extends React.Component{
         name: 'Budgety',
         tags: ['coded'],
         image: budgety__img,
-        description: 'An app that allows you to count your budget per month.',
+        description: 'JS app that allows you to count your monthly budget',
         ghlink: 'https://github.com/nerooc/budgety'
       },
 
@@ -59,7 +56,7 @@ class Projects extends React.Component{
         name: 'OTC Site',
         tags: ['coded', 'designed'],
         image: otcSite__img,
-        description: 'Test landing page for OTC S.A. joint-stock company in Cracow',
+        description: 'Landing page for OTC company in Cracow',
         ghlink: 'https://github.com/nerooc/otc-site'
       },
 
@@ -72,7 +69,7 @@ class Projects extends React.Component{
       },
 
       AureliaPoC:{
-        name: 'Aurelia.js Blog',
+        name: 'MotoBlog',
         tags: ['coded', 'designed'],
         image: motoblog__img,
         description: 'A demo blog application made using Aurelia.js',
@@ -83,15 +80,15 @@ class Projects extends React.Component{
         name: 'Brick Breaker',
         tags: ['coded'],
         image: brickbreaker__img,
-        description: 'Basic game created using Javascript (canvas)',
+        description: 'Basic Javascript game created using Canvas',
         ghlink: 'https://github.com/nerooc/Brick-Breaker'
       },
 
       csux:{
-        name: 'CSUX.pl',
+        name: 'csux.pl',
         tags: ['coded'],
         image: csux__img,
-        description: 'Strona konferencji Ciemna Strona UX',
+        description: 'Official "Ciemna Strona UX" conference website',
         ghlink: 'https://github.com/nerooc/ciemnastronaux'
       },
 
@@ -104,10 +101,10 @@ class Projects extends React.Component{
       },
       
       sgo:{
-        name: 'Symulator Głębii Ostrości',
+        name: 'DOF Simulator',
         tags: ['coded', 'designed'],
         image: sgo__img,
-        description: 'Projekt stworzony na zajęcia z "Podstaw Grafiki Komputerowej"',
+        description: 'C++ depth of field sim made with WxWidgets',
         ghlink: 'https://github.com/nerooc/symulacja-glebi-ostrosci'
       },
 
@@ -115,7 +112,7 @@ class Projects extends React.Component{
         name: 'Discord Bot',
         tags: ['coded'],
         image: discordbot__img,
-        description: 'Discord bot written in Javascript',
+        description: 'Discord bot written in Javascript (Discord.js)',
         ghlink: 'https://github.com/nerooc/discord-bot'
       },
 
@@ -123,7 +120,7 @@ class Projects extends React.Component{
         name: 'Project Runes',
         tags: ['designed'],
         image: runes__img,
-        description: 'Modern website about Runes',
+        description: 'Modern website about runes, designed with Figma',
         ghlink: 'https://github.com/nerooc/slider-component'
       },
 
@@ -131,15 +128,7 @@ class Projects extends React.Component{
         name: 'itberries.pl',
         tags: ['designed'],
         image: itberries__img,
-        description: 'Strona koła naukowego ITberries',
-        ghlink: 'https://www.facebook.com/ITberries/'
-      },
-
-      integra:{
-        name: 'Integra',
-        tags: ['designed'],
-        image: integra__img,
-        description: 'Aplikacja służąca do integracji',
+        description: 'Official ITberries student club website, designed with Figma',
         ghlink: 'https://www.facebook.com/ITberries/'
       }
 
