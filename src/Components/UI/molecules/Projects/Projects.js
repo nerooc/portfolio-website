@@ -15,7 +15,7 @@ import sgo__img from '../../../../Images/projects/sgo.png';
 import nerocars__img from '../../../../Images/projects/nerocars.png';
 import itberries__img from '../../../../Images/projects/itberries.png';
 import runes__img from '../../../../Images/projects/runes.png';
-import discordbot__img from '../../../../Images/projects/discordbot.jpg';
+import discordbot__img from '../../../../Images/projects/discordbot.png';
 
 class Projects extends React.Component{
   state = {

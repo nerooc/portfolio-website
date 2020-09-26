@@ -79,12 +79,10 @@
     letter-spacing: 0.15em;
 }
 
-
 @media (max-width: 1400px) {
 	.project {
         flex-basis: 50%;
 	}
-
 }
 
 
@@ -93,13 +91,10 @@
         flex-basis: 100%;
 
 	}
-
 }
-
 
 @media (max-width: 400px) {
 	.project {
         min-width: 250px;
 	}
-
 }
