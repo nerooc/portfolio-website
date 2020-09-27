@@ -7,7 +7,7 @@ import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Input from '../../atoms/Input/Input';
 import Button from '../../atoms/Button/Button';
 
-import separator from '../../../../Images/separatorBlack.png';
+import separator from '../../../../Images/separators/separatorBlack.png';
 
 import './Contact.css';
 

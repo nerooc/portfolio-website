@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoadingScreen.css';
 
-import logo from '../../../../Images/peace.svg';
+import logo from '../../../../Images/navbar/logo.svg';
 
 
 

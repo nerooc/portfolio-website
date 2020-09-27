@@ -3,14 +3,14 @@ import './ITberries.css';
 import Parallax from 'react-rellax';
 import Fade from 'react-reveal/Fade';
 import Button from '../../atoms/Button/Button';
-import itbPNG from '../../../../Images/ITB.png';
+import itb_logo from '../../../../Images/ITberries/ITb-logo.png';
 
 class Header extends React.Component {
   render() {
     return (
       <div className="itb">
         <Parallax speed={-6.5}>
-          <img className="itb__logo" src={itbPNG} alt="itbLogo" />
+          <img className="itb__logo" src={itb_logo} alt="itbLogo" />
         </Parallax>
         <div className="itb__container">
           <Fade left duration={2500} distance="30px">

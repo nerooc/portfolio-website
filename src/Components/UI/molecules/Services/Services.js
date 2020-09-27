@@ -3,9 +3,9 @@ import Service from '../../atoms/Service/Service';
 
 import './Services.css';
 
-import design from '../../../../Images/design.png';
-import maintenance from '../../../../Images/maintenance.png';
-import development from '../../../../Images/development.png';
+import design from '../../../../Images/services/design.png';
+import maintenance from '../../../../Images/services/maintenance.png';
+import development from '../../../../Images/services/development.png';
 
 const Services = props => (
   <div className="services">

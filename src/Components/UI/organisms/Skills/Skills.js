@@ -3,25 +3,25 @@ import React from 'react';
 import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Skill from '../../atoms/Skill/Skill';
 
-import html_icon from '../../../../Images/html5.svg';
-import css_icon from '../../../../Images/css3.svg';
-import sass_icon from '../../../../Images/sass.svg';
-import js_icon from '../../../../Images/js.svg';
-import react_icon from '../../../../Images/react.svg';
-import bootstrap_icon from '../../../../Images/bootstrap.svg';
-import git_icon from '../../../../Images/git.svg';
-import figma_icon from '../../../../Images/figma.svg';
+import html_icon from '../../../../Images/skills/html5.svg';
+import css_icon from '../../../../Images/skills/css3.svg';
+import sass_icon from '../../../../Images/skills/sass.svg';
+import js_icon from '../../../../Images/skills/js.svg';
+import react_icon from '../../../../Images/skills/react.svg';
+import bootstrap_icon from '../../../../Images/skills/bootstrap.svg';
+import git_icon from '../../../../Images/skills/git.svg';
+import figma_icon from '../../../../Images/skills/figma.svg';
 
-import node_icon from '../../../../Images/node.svg';
-import mysql_icon from '../../../../Images/mysql.svg';
-import mongodb_icon from '../../../../Images/mongo.svg';
-import ts_icon from '../../../../Images/typescript.svg';
+import node_icon from '../../../../Images/skills/node.svg';
+import mysql_icon from '../../../../Images/skills/mysql.svg';
+import mongodb_icon from '../../../../Images/skills/mongo.svg';
+import ts_icon from '../../../../Images/skills/typescript.svg';
 
 
-import english_icon from '../../../../Images/english.svg';
-import spanish_icon from '../../../../Images/spanish.svg';
-import cpp_icon from '../../../../Images/cpp.svg';
-import c_icon from '../../../../Images/c.svg';
+import english_icon from '../../../../Images/skills/english.svg';
+import spanish_icon from '../../../../Images/skills/spanish.svg';
+import cpp_icon from '../../../../Images/skills/cpp.svg';
+import c_icon from '../../../../Images/skills/c.svg';
 
 
 

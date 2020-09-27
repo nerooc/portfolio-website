@@ -1,9 +1,9 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../../../../Images/logo.svg';
+import logo from '../../../../Images/navbar/logo.svg';
 import '../../../../globalStyles/hamburger.css';
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 class Navbar extends React.Component {
