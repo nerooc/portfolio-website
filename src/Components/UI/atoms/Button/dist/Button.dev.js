@@ -21,6 +21,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+/* button component with a few props-depending options */
 var Button = _styledComponents["default"].button(_templateObject(), function (props) {
   return props.bold ? '900' : '600';
 }, function (props) {

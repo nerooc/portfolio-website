@@ -2,9 +2,11 @@ import React from 'react';
 import Button from '../Button/Button';
 import './Project.css';
 
+/* project component gets all the unique data with props and renders them */
 const Project = props => (
+
   <div className="project">
-    <img className="project__image" src={props.image}/>
+    <img className="project__image" src={props.image} alt={props.name}/>
     <div className = "project__container">
       <h2 className="project__tags">{props.tags.join(', ')}</h2>
       <h1 className="project__title">{props.name}</h1>
@@ -18,7 +20,6 @@ const Project = props => (
                 window.open(props.ghlink);
               }} white noTransition small>MORE</Button>
       </div>
-
     </div>
   </div>
 );

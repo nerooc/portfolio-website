@@ -1,13 +1,13 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { template, userId } from '../../../../keys';
+import {template, userId} from '../../../../keys';
 
 import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Input from '../../atoms/Input/Input';
 import Button from '../../atoms/Button/Button';
 
-import separator from '../../../../Images/separators/separatorBlack.png';
+import separator from '../../../../images/separators/separatorBlack.png';
 
 import './Contact.css';
 
@@ -25,7 +25,7 @@ class Contact extends React.Component {
                     required: true
                 },
                 valid: false,
-                touched: false                
+                touched: false
             },
 
             email: {
@@ -39,7 +39,7 @@ class Contact extends React.Component {
                     required: true
                 },
                 valid: false,
-                touched: false                
+                touched: false
             },
 
             number: {
@@ -52,8 +52,8 @@ class Contact extends React.Component {
                 validation: {
                     required: false
                 },
-                
-                valid: true,
+
+                valid: true
             },
 
             message: {
@@ -66,8 +66,8 @@ class Contact extends React.Component {
                 validation: {
                     required: true
                 },
-                valid: false ,
-                touched: false                
+                valid: false,
+                touched: false
             }
         },
 
@@ -78,13 +78,13 @@ class Contact extends React.Component {
         },
 
         highlighted: false
-        
+
     }
 
     handleValidation = (value, validation) => {
         let isValid = true;
-        
-        if(validation.required){
+
+        if (validation.required) {
             isValid = value.trim() !== '';
         }
 
@@ -122,15 +122,16 @@ class Contact extends React.Component {
 
         console.log(form.name);
 
-        if(form.name.valid && form.email.valid && form.number.valid && form.message.valid){
-        
+        if (form.name.valid && form.email.valid && form.number.valid && form.message.valid) {
+
             this.setState({
                 email: {
                     emailBeingSent: true
                 }
             })
-    
-            emailjs.send('Gmail', template, mail, userId)
+
+            emailjs
+                .send('Gmail', template, mail, userId)
                 .then((result) => {
                     this.resetElementsValues();
                     this.setState({
@@ -160,7 +161,7 @@ class Contact extends React.Component {
             ...this.state.formConfig
         }
 
-        for(let element in updatedForm){
+        for (let element in updatedForm) {
             let updatedFormElement = {
                 ...updatedForm[element]
             }
@@ -191,17 +192,18 @@ class Contact extends React.Component {
                         inputConfig={formElement.element.config}
                         value={formElement.element.value}
                         touched={formElement.element.touched}
-                        highlighted={this.state.highlighted}
-                        />;
-                        
+                        highlighted={this.state.highlighted}/>;
+
                 }))}
             </div>
         );
-        
+
         let emailResult = null;
 
-        if(this.state.email.emailBeingSent){
-            emailResult = <div className="contact__email"> Email is being sent... </div>;
+        if (this.state.email.emailBeingSent) {
+            emailResult = <div className="contact__email">
+                Email is being sent...
+            </div>;
 
             if (this.state.email.emailSent) {
                 emailResult = this.state.email.emailSuccess
@@ -209,38 +211,41 @@ class Contact extends React.Component {
                             The email has been successfully sent!
                         </div>
                     : <div className="contact__email emailError">
-                            There has been an error when sending...
-                        </div>
+                        There has been an error when sending...
+                    </div>
             }
         }
 
         let formWrapperClasses = ['contact__formwrapper'];
 
-        if(this.state.highlighted){
+        if (this.state.highlighted) {
             formWrapperClasses.push('contact__formwrapper--highlighted');
         }
 
         return (
-            
-                <div className="contact">
-                    <SectionHeader className="contact__header">CONTACT</SectionHeader>
 
-                    <Paragraph className="contact__paragraph">
-                        If you are interested in cooperation or would like to hire me for your project, please contact me by e-mail or use the form below.
-                    </Paragraph>
+            <div className="contact">
+                <SectionHeader className="contact__header">CONTACT</SectionHeader>
 
-                    <img src={separator} className="contact__separator" alt="contactSeparator"/>
+                <Paragraph className="contact__paragraph">
+                    If you are interested in cooperation or would like to hire me for your project,
+                    please contact me by e-mail or use the form below.
+                </Paragraph>
 
-                    <div className={formWrapperClasses.join(' ')}>
-                        {form}
-                        Fields marked with an asterisk must be filled.
-                        {emailResult} 
-                    </div>
+                <img src={separator} className="contact__separator" alt="contactSeparator"/>
 
-                    <Button bold onClick = {this.contactHandler} className="contact__submit contact__emailSent">SUBMIT</Button>
-
+                <div className={formWrapperClasses.join(' ')}>
+                    {form}
+                    Fields marked with an asterisk must be filled. {emailResult}
                 </div>
-                
+
+                <Button
+                    bold
+                    onClick={this.contactHandler}
+                    className="contact__submit contact__emailSent">SUBMIT</Button>
+
+            </div>
+
         );
     }
 }

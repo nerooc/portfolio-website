@@ -3,25 +3,25 @@ import React from 'react';
 import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Skill from '../../atoms/Skill/Skill';
 
-import html_icon from '../../../../Images/skills/html5.svg';
-import css_icon from '../../../../Images/skills/css3.svg';
-import sass_icon from '../../../../Images/skills/sass.svg';
-import js_icon from '../../../../Images/skills/js.svg';
-import react_icon from '../../../../Images/skills/react.svg';
-import bootstrap_icon from '../../../../Images/skills/bootstrap.svg';
-import git_icon from '../../../../Images/skills/git.svg';
-import figma_icon from '../../../../Images/skills/figma.svg';
+import html_icon from '../../../../images/skills/html5.svg';
+import css_icon from '../../../../images/skills/css3.svg';
+import sass_icon from '../../../../images/skills/sass.svg';
+import js_icon from '../../../../images/skills/js.svg';
+import react_icon from '../../../../images/skills/react.svg';
+import bootstrap_icon from '../../../../images/skills/bootstrap.svg';
+import git_icon from '../../../../images/skills/git.svg';
+import figma_icon from '../../../../images/skills/figma.svg';
 
-import node_icon from '../../../../Images/skills/node.svg';
-import mysql_icon from '../../../../Images/skills/mysql.svg';
-import mongodb_icon from '../../../../Images/skills/mongo.svg';
-import ts_icon from '../../../../Images/skills/typescript.svg';
+import node_icon from '../../../../images/skills/node.svg';
+import mysql_icon from '../../../../images/skills/mysql.svg';
+import mongodb_icon from '../../../../images/skills/mongo.svg';
+import ts_icon from '../../../../images/skills/typescript.svg';
 
 
-import english_icon from '../../../../Images/skills/english.svg';
-import spanish_icon from '../../../../Images/skills/spanish.svg';
-import cpp_icon from '../../../../Images/skills/cpp.svg';
-import c_icon from '../../../../Images/skills/c.svg';
+import english_icon from '../../../../images/skills/english.svg';
+import spanish_icon from '../../../../images/skills/spanish.svg';
+import cpp_icon from '../../../../images/skills/cpp.svg';
+import c_icon from '../../../../images/skills/c.svg';
 
 
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+/* button component with a few props-depending options */
 const Button = styled.button`
   /* button reset */
   background: none repeat scroll 0 0 transparent;

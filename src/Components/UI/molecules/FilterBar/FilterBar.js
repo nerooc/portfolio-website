@@ -4,7 +4,6 @@ import './FilterBar.css';
 
 class FilterBar extends React.Component {
   
-
   renderFilterOptions() {
     return Object.keys(this.props.filters).map(filterOption => {
       const filterOptionValue = this.props.filters[filterOption];

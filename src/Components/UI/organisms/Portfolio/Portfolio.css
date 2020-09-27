@@ -12,12 +12,12 @@
     /* do przetestowania: */
    
     /*
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../../../../Images/lake-background.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../../../../images/lake-background.jpg);
     background-position: center center;
 	background-attachment: fixed;
     */
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../../../../Images/portfolio/portfolio-background.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../../../../images/portfolio/portfolio-background.jpg);
     background-position: center center;
 }
 

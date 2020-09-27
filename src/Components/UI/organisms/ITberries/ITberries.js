@@ -3,7 +3,7 @@ import './ITberries.css';
 import Parallax from 'react-rellax';
 import Fade from 'react-reveal/Fade';
 import Button from '../../atoms/Button/Button';
-import itb_logo from '../../../../Images/ITberries/ITb-logo.png';
+import itb_logo from '../../../../images/ITberries/ITb-logo.png';
 
 class Header extends React.Component {
   render() {

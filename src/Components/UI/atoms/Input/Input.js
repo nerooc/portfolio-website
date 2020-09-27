@@ -1,18 +1,24 @@
 import React from 'react';
 import './Input.css';
 
+/* dynamic input component */
 const Input = (props) => {
     let inputElement = null;
+
+    /* array of classes that will be connected with specific input element */
     let classesArray = ['input'];
 
+    /* class pushed conditionally when input element empty */
     if(!props.valid && props.touched){
         classesArray.push('invalid');
     }
 
+    /* class pushed conditionally when input element empty after sumbitting */
     if(!props.valid && props.highlighted){
         classesArray.push('invalidHighlight');
     }
 
+    /* switch statement choosing which input element will be rendered */
     switch (props.inputType) {
         case('input'):
             inputElement = <input onChange={props.changed} className={classesArray.join(' ')} value={props.value} {...props.inputConfig}/>;

@@ -1,18 +1,3 @@
-- change social-media-units to actual SVGs and make them bigger
-- add loading screen for the hero photo to load
-- shorten paths in imports 
-- test out the different portfolio header background
-- change services rendering into a method that renders li elements
-- change units to ems&rems
-- fix services css as I didn't provide the props earlier...
-- add prop type validation
-- make mail sending more secure (cover blocking empty emails) and change keys.js values to the ones I need
-- CHANGE SVGS INTO COMPONENTS
-- ADD COMMENTS EVERYWHERE
-- take care of smooth scroll in app.css somehow
 - accessibility
-- make skills component be outside of the about
-- add an optional hover for skill elements (scale(1.2))
-- make mailresult a component
-- project photos need better quality and resolution
 - internationalization
+- add loading screen

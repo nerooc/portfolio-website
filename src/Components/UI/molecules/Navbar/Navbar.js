@@ -1,13 +1,13 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../../../../Images/navbar/logo.svg';
+import logo from '../../../../images/navbar/logo.svg';
 import '../../../../globalStyles/hamburger.css';
 
 import { Link } from "react-scroll";
 
 
 class Navbar extends React.Component {
-  // metoda obsługująca menu hamburger, zrzuca i chowa dropdown menu
+  /* method controlling hamburger menu, drops and hides dropdown menu */
 
   handleHamburgerClick = () => {
     const hamburger = document.querySelector('.hamburger');
@@ -19,7 +19,7 @@ class Navbar extends React.Component {
   };
 
   render() {
-    // funkcja która po scrollu przesuwa navbar w górę i dołącza czarny background
+    /* function that moves navbar up and adds black background after scrolling */
 
     window.onscroll = () => {
       const navWrap = document.querySelector('.nav-bar');
@@ -52,7 +52,7 @@ class Navbar extends React.Component {
         <div className="nav-bar">
           
           <a href="#">
-            <img className="nav-bar__logo" src={logo} alt="logo" />
+            <img className="nav-bar__logo" src={logo} alt="logo"/>
           </a>
 
           <div className="nav-bar__black-bar">

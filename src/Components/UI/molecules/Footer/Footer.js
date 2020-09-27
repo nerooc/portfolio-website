@@ -1,11 +1,11 @@
 import React from 'react';
 import './Footer.css';
 
-import mail from '../../../../Images/footer/mail-footer.svg';
-import facebook from '../../../../Images/footer/facebook-footer.svg';
-import linkedin from '../../../../Images/footer/linked-in-footer.svg';
-import ig from '../../../../Images/footer/ig-footer.svg';
-import arrow from '../../../../Images/footer/double-arrow-up.svg';
+import mail from '../../../../images/footer/mail-footer.svg';
+import facebook from '../../../../images/footer/facebook-footer.svg';
+import linkedin from '../../../../images/footer/linked-in-footer.svg';
+import ig from '../../../../images/footer/ig-footer.svg';
+import arrow from '../../../../images/footer/double-arrow-up.svg';
 
 const Footer = props => (
     <footer className="footer">

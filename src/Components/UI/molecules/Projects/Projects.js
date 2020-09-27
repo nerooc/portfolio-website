@@ -1,31 +1,50 @@
 import React from 'react';
 import Project from '../../atoms/Project/Project';
 
+import forkify__img from '../../../../images/projects/forkify.png';
+import eatsome__img from '../../../../images/projects/eatsome.png';
+import budgety__img from '../../../../images/projects/budgety.png';
+import otcSite__img from '../../../../images/projects/otcsite.png';
+import pig__img from '../../../../images/projects/pig.png';
+import motoblog__img from '../../../../images/projects/motoblog.png';
+import brickbreaker__img from '../../../../images/projects/brickbreaker.png';
+import jammming__img from '../../../../images/projects/jammming.png';
+import csux__img from '../../../../images/projects/csux.png';
+import sgo__img from '../../../../images/projects/sgo.png';
+import nerocars__img from '../../../../images/projects/nerocars.png';
+import itberries__img from '../../../../images/projects/itberries.png';
+import runes__img from '../../../../images/projects/runes.png';
+import discordbot__img from '../../../../images/projects/discordbot.png';
+
 import './Projects.css';
-import forkify__img from '../../../../Images/projects/forkify.png';
-import eatsome__img from '../../../../Images/projects/eatsome.png';
-import budgety__img from '../../../../Images/projects/budgety.png';
-import otcSite__img from '../../../../Images/projects/otcsite.png';
-import pig__img from '../../../../Images/projects/pig.png';
-import motoblog__img from '../../../../Images/projects/motoblog.png';
-import brickbreaker__img from '../../../../Images/projects/brickbreaker.png';
-import jammming__img from '../../../../Images/projects/jammming.png';
-import csux__img from '../../../../Images/projects/csux.png';
-import sgo__img from '../../../../Images/projects/sgo.png';
-import nerocars__img from '../../../../Images/projects/nerocars.png';
-import itberries__img from '../../../../Images/projects/itberries.png';
-import runes__img from '../../../../Images/projects/runes.png';
-import discordbot__img from '../../../../Images/projects/discordbot.png';
 
 class Projects extends React.Component{
   state = {
     projects: {
-      forkify:{
-        name: 'Forkify',
+      csux:{
+        name: 'csux.pl',
         tags: ['coded'],
-        image: forkify__img,
-        description: 'Recipe browsing in Javascript (using food2fork API)',
-        ghlink: 'https://github.com/nerooc/forkify'
+        image: csux__img,
+        description: 'Official "Ciemna Strona UX" conference website',
+        ghlink: 'https://github.com/nerooc/ciemnastronaux'
+      },
+
+      AureliaPoC:{
+        name: 'MotoBlog',
+        tags: ['coded', 'designed'],
+        image: motoblog__img,
+        description: 'A demo blog application made using Aurelia.js',
+        ghlink: 'https://www.facebook.com/ITberries/'
+      },
+
+      
+
+      brickBreaker:{
+        name: 'Brick Breaker',
+        tags: ['coded'],
+        image: brickbreaker__img,
+        description: 'Basic Javascript game created using Canvas',
+        ghlink: 'https://github.com/nerooc/Brick-Breaker'
       },
 
       eatsome:{
@@ -34,6 +53,14 @@ class Projects extends React.Component{
         image: eatsome__img,
         description: 'Restaurant browsing in React.js (using Yelp API)',
         ghlink: 'https://github.com/nerooc/eatsome.'
+      },
+
+      otcSite:{
+        name: 'OTC Site',
+        tags: ['coded', 'designed'],
+        image: otcSite__img,
+        description: 'Landing page for OTC company in Cracow',
+        ghlink: 'https://github.com/nerooc/otc-site'
       },
 
       jammming:{
@@ -52,13 +79,7 @@ class Projects extends React.Component{
         ghlink: 'https://github.com/nerooc/budgety'
       },
 
-      otcSite:{
-        name: 'OTC Site',
-        tags: ['coded', 'designed'],
-        image: otcSite__img,
-        description: 'Landing page for OTC company in Cracow',
-        ghlink: 'https://github.com/nerooc/otc-site'
-      },
+      
 
       pigDiceGame:{
         name: 'Pig Dice Game',
@@ -66,30 +87,6 @@ class Projects extends React.Component{
         image: pig__img,
         description: 'A dice game named "Pig"',
         ghlink: 'https://github.com/nerooc/Pig-Dice-Game'
-      },
-
-      AureliaPoC:{
-        name: 'MotoBlog',
-        tags: ['coded', 'designed'],
-        image: motoblog__img,
-        description: 'A demo blog application made using Aurelia.js',
-        ghlink: 'https://www.facebook.com/ITberries/'
-      },
-
-      brickBreaker:{
-        name: 'Brick Breaker',
-        tags: ['coded'],
-        image: brickbreaker__img,
-        description: 'Basic Javascript game created using Canvas',
-        ghlink: 'https://github.com/nerooc/Brick-Breaker'
-      },
-
-      csux:{
-        name: 'csux.pl',
-        tags: ['coded'],
-        image: csux__img,
-        description: 'Official "Ciemna Strona UX" conference website',
-        ghlink: 'https://github.com/nerooc/ciemnastronaux'
       },
 
       neroCars:{
@@ -106,6 +103,14 @@ class Projects extends React.Component{
         image: sgo__img,
         description: 'C++ depth of field sim made with WxWidgets',
         ghlink: 'https://github.com/nerooc/symulacja-glebi-ostrosci'
+      },
+
+      forkify:{
+        name: 'Forkify',
+        tags: ['coded'],
+        image: forkify__img,
+        description: 'Recipe browsing in Javascript (using food2fork API)',
+        ghlink: 'https://github.com/nerooc/forkify'
       },
 
       discordBot:{
@@ -135,7 +140,6 @@ class Projects extends React.Component{
     }
   }
 
-
   render(){
 
     let projects = [];
@@ -148,13 +152,10 @@ class Projects extends React.Component{
       projects.push(pushable);
     }
 
-
     return(
       <div className="projects">
 
         {projects.map((project) => {
-
-
           if(this.props.filter === "all" || project.tags.includes(this.props.filter)){
             return <Project
                     key={project.id} 
@@ -163,6 +164,8 @@ class Projects extends React.Component{
                     name={project.name}
                     ghlink={project.ghlink}
                     >{project.description}</Project>  
+          } else {
+            return null;
           }
         })}
 

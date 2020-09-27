@@ -1,10 +1,10 @@
 import React from 'react';
 import './Header.css';
 
-import mail_icon from '../../../../Images/header/mail.png';
-import github_icon from '../../../../Images/header/github.png';
-import linkedin_icon from '../../../../Images/header/linked-in.png';
-import separator from '../../../../Images/separators/separatorWhite.png';
+import mail_icon from '../../../../images/header/mail.svg';
+import github_icon from '../../../../images/header/github.svg';
+import linkedin_icon from '../../../../images/header/linked-in.svg';
+import separator from '../../../../images/separators/separatorWhite.png';
 
 class Header extends React.Component {
   render() {
