@@ -10,7 +10,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  font-family: Raleway;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 16px;\n  line-height: 20px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: Raleway;\n  font-style: normal;\n  font-weight: 400;\n  font-size: 16px;\n  line-height: 30px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
