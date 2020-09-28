@@ -2,9 +2,9 @@ import React from 'react';
 import './Footer.css';
 
 import mail from '../../../../images/footer/mail-footer.svg';
-import facebook from '../../../../images/footer/facebook-footer.svg';
+import freecodecamp from '../../../../images/footer/freecodecamp-footer.svg';
 import linkedin from '../../../../images/footer/linked-in-footer.svg';
-import ig from '../../../../images/footer/ig-footer.svg';
+import codepen from '../../../../images/footer/codepen-footer.svg';
 import arrow from '../../../../images/footer/double-arrow-up.svg';
 
 const Footer = props => (
@@ -22,9 +22,12 @@ const Footer = props => (
             <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.facebook.com/tomek.gajda.94">
+                href="https://www.freecodecamp.org/nerooc">
 
-                <img className="footer__social-media-unit" src={facebook} alt="fb-footer-svg"/>
+                <img
+                    className="footer__social-media-unit"
+                    src={freecodecamp}
+                    alt="fb-footer-svg"/>
             </a>
 
             <a
@@ -38,8 +41,12 @@ const Footer = props => (
                     alt="linkedin-footer-svg"/>
             </a>
 
-            <a href="mailto:tomasz_gajda@outlook.com">
-                <img className="footer__social-media-unit" src={ig} alt="ig-footer-svg"/>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://codepen.io/nerooc">
+
+                <img className="footer__social-media-unit" src={codepen} alt="ig-footer-svg"/>
             </a>
 
             <a href="mailto:tomasz_gajda@outlook.com">
@@ -50,10 +57,10 @@ const Footer = props => (
         <div className="footer__rights">
             <b style={{
                 fontWeight: '600'
-            }}>@2020 Tomasz Gajda 
+            }}>@2020 Tomasz Gajda
             </b>
             &nbsp;All Rights Reserved. 🔥
-            </div>
+        </div>
 
     </footer>
 
