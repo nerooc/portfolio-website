@@ -79,8 +79,6 @@ class Projects extends React.Component{
         ghlink: 'https://github.com/nerooc/budgety'
       },
 
-      
-
       pigDiceGame:{
         name: 'Pig Dice Game',
         tags: ['coded'],
@@ -122,7 +120,7 @@ class Projects extends React.Component{
       },
 
       projectRunes:{
-        name: 'Project Runes',
+        name: 'Hávamál',
         tags: ['designed'],
         image: runes__img,
         description: 'Modern website about runes, designed with Figma',
