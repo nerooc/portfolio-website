@@ -26,18 +26,17 @@ class Projects extends React.Component{
         tags: ['coded'],
         image: csux__img,
         description: 'Official "Ciemna Strona UX" conference website',
+        demolink: 'http://csux.pl',
         ghlink: 'https://github.com/nerooc/ciemnastronaux'
       },
 
       AureliaPoC:{
         name: 'MotoBlog',
-        tags: ['coded', 'designed'],
+        tags: ['coded'],
         image: motoblog__img,
         description: 'A demo blog application made using Aurelia.js',
-        ghlink: 'https://www.facebook.com/ITberries/'
+        ghlink: 'https://github.com/nerooc/Aurelia.js-PoC'
       },
-
-      
 
       brickBreaker:{
         name: 'Brick Breaker',
@@ -60,7 +59,8 @@ class Projects extends React.Component{
         tags: ['coded', 'designed'],
         image: otcSite__img,
         description: 'Landing page for OTC company in Cracow',
-        ghlink: 'https://github.com/nerooc/otc-site'
+        ghlink: 'https://github.com/nerooc/otc-site',
+        figmalink: 'https://www.figma.com/file/COgxLYsHi0iFKIrTDrcRWZ/OTC-Site---Official?node-id=0%3A1&viewport=912%2C699%2C0.06757233291864395'
       },
 
       jammming:{
@@ -87,17 +87,20 @@ class Projects extends React.Component{
         ghlink: 'https://github.com/nerooc/Pig-Dice-Game'
       },
 
+      /*
       neroCars:{
         name: 'Nero Cars Rental',
         tags: ['designed'],
         image: nerocars__img,
         description: 'Sports car rental website',
-        ghlink: 'https://github.com/nerooc/nero-cars/tree/master/src'
+        ghlink: 'https://github.com/nerooc/nero-cars/tree/master/src',
+        figmalink: 'https://www.figma.com/file/COgxLYsHi0iFKIrTDrcRWZ/OTC-Site---Official?node-id=0%3A1&viewport=912%2C699%2C0.06757233291864395'
       },
+      */
       
       sgo:{
         name: 'DOF Simulator',
-        tags: ['coded', 'designed'],
+        tags: ['coded'],
         image: sgo__img,
         description: 'C++ depth of field sim made with WxWidgets',
         ghlink: 'https://github.com/nerooc/symulacja-glebi-ostrosci'
@@ -124,7 +127,7 @@ class Projects extends React.Component{
         tags: ['designed'],
         image: runes__img,
         description: 'Modern website about runes, designed with Figma',
-        ghlink: 'https://github.com/nerooc/slider-component'
+        figmalink: 'https://www.figma.com/file/nM1VzQ4RXpzZ4SA3CJcAs5/Havamal---Official?node-id=0%3A1&viewport=173%2C445%2C0.0258468184620142'
       },
 
       itberries:{
@@ -132,7 +135,7 @@ class Projects extends React.Component{
         tags: ['designed'],
         image: itberries__img,
         description: 'Official ITberries student club website, designed with Figma',
-        ghlink: 'https://www.facebook.com/ITberries/'
+        figmalink: 'https://www.figma.com/file/Wpjag9sYtQgY5Uqha74eE3/itberries.pl?viewport=0%2C0%2C1'
       }
 
     }
@@ -161,6 +164,8 @@ class Projects extends React.Component{
                     tags={project.tags} 
                     name={project.name}
                     ghlink={project.ghlink}
+                    demolink={project.demolink}
+                    figmalink={project.figmalink}
                     >{project.description}</Project>  
           } else {
             return null;

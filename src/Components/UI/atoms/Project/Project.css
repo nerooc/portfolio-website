@@ -40,8 +40,8 @@
 
 .project__buttons {
     display: flex;
-    width: 60%;
-    justify-content: center;
+    width: 70%;
+    justify-content: space-around;
 }
 
 .project__divider{
@@ -82,9 +82,12 @@
 @media (max-width: 1400px) {
 	.project {
         flex-basis: 50%;
-	}
+    }
+    
+    .project__buttons {
+        width: 80%;
+    }
 }
-
 
 @media (max-width: 800px) {
 	.project {

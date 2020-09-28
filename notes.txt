@@ -1,3 +1,0 @@
-- accessibility
-- internationalization
-- add loading screen

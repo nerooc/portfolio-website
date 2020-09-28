@@ -13,13 +13,13 @@ class Services extends React.Component{
       design: {
         title: "DESIGN",
         source: design_icon,
-        text: "I can design the website based on your needs and suggestions. I can also create it from scratch by consulting with you during work."
+        text: "I can design the website based on your needs and suggestions. I can also create it from scratch by consulting with you during my work."
       },
 
       development: {
         title: "DEVELOPMENT",
         source: development_icon,
-        text: "Based on a project created by me or another one, sent by you, I can program the website to be fully functional and responsive."
+        text: "Based on a project created by me (or any another one provided by you), I can program the website to be fully functional and responsive."
       },
 
       maintenance:{

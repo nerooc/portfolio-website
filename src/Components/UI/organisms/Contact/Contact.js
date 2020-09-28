@@ -228,7 +228,7 @@ class Contact extends React.Component {
                 <SectionHeader className="contact__header">CONTACT</SectionHeader>
 
                 <Paragraph className="contact__paragraph">
-                    If you are interested in cooperation or would like to hire me for your project,
+                    If you are interested in cooperation or would like to hire me for your project -
                     please contact me by e-mail or use the form below.
                 </Paragraph>
 

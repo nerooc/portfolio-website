@@ -18,7 +18,7 @@ class Header extends React.Component {
           </Fade>
           <Fade left duration={2500} distance="30px">
             <p className="itb__p">
-            I am one of the members of a scientific club that brings together enthusiasts of the Internet and new technologies. At ITberries, we design and develop websites and web applications. Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, which we are organizing for the sixth time. Working in a club as a Front-End Developer definitely developed my skills in group work and working under time pressure. If you want to know more about us, click the button below!
+            I am a member of a science club that brings together enthusiasts of the Internet and new technologies. At ITberries, we design and develop websites and web applications following agile methodology. Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, which we are organizing for the sixth time. Working in the club as a Front-End Developer definitely gives me experience in group work and working under time pressure. If you want to know more about us, click the button below!
             </p>
           </Fade>
           <Fade left duration={2500} distance="30px">
