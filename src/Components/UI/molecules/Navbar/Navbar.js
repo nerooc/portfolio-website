@@ -18,6 +18,10 @@ class Navbar extends React.Component {
     hamburger.classList.toggle('is-active');
   };
 
+  closeMobileMenu = () => {
+
+  }
+
   render() {
     /* function that moves navbar up and adds black background after scrolling */
 
@@ -51,7 +55,8 @@ class Navbar extends React.Component {
       <header>
         <div className="nav-bar">
           
-          <a href="#">
+          <a href="#" onClick={this.handleHamburgerClick}>
+
             <img className="nav-bar__logo" src={logo} alt="logo"/>
           </a>
 
@@ -77,6 +82,7 @@ class Navbar extends React.Component {
                 smooth={true}
                 offset={-120}
                 duration={300}
+                onClick={this.handleHamburgerClick}
               >About me</Link>
             </li>
 
@@ -88,6 +94,7 @@ class Navbar extends React.Component {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={this.handleHamburgerClick}                
               >Skills</Link>
             </li>
 
@@ -99,6 +106,7 @@ class Navbar extends React.Component {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={this.handleHamburgerClick}
               >Portfolio</Link>
             </li>
 
@@ -108,6 +116,7 @@ class Navbar extends React.Component {
               smooth={true}
               duration={300}
               offset={20}
+              onClick={this.handleHamburgerClick}
             >
               <li className="nav-bar__button">
                 CONTACT ME

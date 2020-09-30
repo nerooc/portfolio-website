@@ -12,7 +12,7 @@ import bootstrap_icon from '../../../../images/skills/bootstrap.svg';
 import git_icon from '../../../../images/skills/git.svg';
 import figma_icon from '../../../../images/skills/figma.svg';
 
-import node_icon from '../../../../images/skills/node.svg';
+import php_icon from '../../../../images/skills/php.svg';
 import mysql_icon from '../../../../images/skills/mysql.svg';
 import mongodb_icon from '../../../../images/skills/mongo.svg';
 import ts_icon from '../../../../images/skills/typescript.svg';
@@ -46,7 +46,7 @@ const Skills = props => (
 
         <h1 className="skills__h1">LEARNING:</h1>
         <div className="skills__container">
-            <Skill source={node_icon}>Node.js</Skill>
+            <Skill source={php_icon}>PHP</Skill>
             <Skill source={mysql_icon}>MySQL</Skill>
             <Skill source={mongodb_icon}>Mongo DB</Skill>
             <Skill source={ts_icon}>Typescript</Skill>
