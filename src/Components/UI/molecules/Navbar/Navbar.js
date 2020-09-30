@@ -18,10 +18,6 @@ class Navbar extends React.Component {
     hamburger.classList.toggle('is-active');
   };
 
-  closeMobileMenu = () => {
-
-  }
-
   render() {
     /* function that moves navbar up and adds black background after scrolling */
 
