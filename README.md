@@ -1,3 +1,18 @@
+# `Portfolio Website`
+
+### [OPEN DEMO](https://tomasz-gajda.netlify.app/)
+
+## Tech stack
+- HTML
+- CSS
+- React.js
+- react-scroll
+- emailjs
+- styled-components
+
+Portfolio website written in a **React.js**. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
