@@ -16,7 +16,7 @@ import php_icon from '../../../../images/skills/php.svg';
 import mysql_icon from '../../../../images/skills/mysql.svg';
 import mongodb_icon from '../../../../images/skills/mongo.svg';
 import ts_icon from '../../../../images/skills/typescript.svg';
-
+import wp_icon from '../../../../images/skills/wp.svg'
 
 import english_icon from '../../../../images/skills/english.svg';
 import spanish_icon from '../../../../images/skills/spanish.svg';
@@ -50,6 +50,7 @@ const Skills = props => (
             <Skill source={mysql_icon}>MySQL</Skill>
             <Skill source={mongodb_icon}>Mongo DB</Skill>
             <Skill source={ts_icon}>Typescript</Skill>
+            <Skill source={wp_icon}>Wordpress</Skill>
         </div>
 
         <h1 className="skills__h1">DIFFERENT:</h1>
