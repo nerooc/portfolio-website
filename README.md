@@ -5,6 +5,7 @@
 ## Tech stack
 - HTML
 - CSS (RWD)
+- BEM
 - React.js
 - react-scroll
 - emailjs
