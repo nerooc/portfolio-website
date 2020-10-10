@@ -11,7 +11,7 @@ import brickbreaker__img from '../../../../images/projects/brickbreaker.png';
 import jammming__img from '../../../../images/projects/jammming.png';
 import csux__img from '../../../../images/projects/csux.png';
 import sgo__img from '../../../../images/projects/sgo.png';
-import nerocars__img from '../../../../images/projects/nerocars.png';
+import sexycars__img from '../../../../images/projects/sexycars.png';
 import itberries__img from '../../../../images/projects/itberries.png';
 import runes__img from '../../../../images/projects/runes.png';
 import discordbot__img from '../../../../images/projects/discordbot.png';
@@ -87,16 +87,15 @@ class Projects extends React.Component{
         ghlink: 'https://github.com/nerooc/Pig-Dice-Game'
       },
 
-      /*
-      neroCars:{
-        name: 'Nero Cars Rental',
+      
+      sexyCars:{
+        name: 'sexycars.pl',
         tags: ['designed'],
-        image: nerocars__img,
-        description: 'Sports car rental website',
-        ghlink: 'https://github.com/nerooc/nero-cars/tree/master/src',
-        figmalink: 'https://www.figma.com/file/COgxLYsHi0iFKIrTDrcRWZ/OTC-Site---Official?node-id=0%3A1&viewport=912%2C699%2C0.06757233291864395'
+        image: sexycars__img,
+        description: 'Sports car rental website (redesign)',
+        figmalink: 'https://www.figma.com/file/Q2KZzeaxKQy6VmJzzKbOj0/sexycars---Official?node-id=0%3A1&viewport=2154%2C3021%2C0.8898117542266846'
       },
-      */
+      
       
       sgo:{
         name: 'DOF Simulator',
