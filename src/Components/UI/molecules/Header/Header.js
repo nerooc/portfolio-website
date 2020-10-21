@@ -10,8 +10,8 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h2 className="header__submain">my name is Thomas</h2>
-        <h1 className="header__main">I'M A DEVELOPER</h1>
+        <h1 className="header__main">Tomasz Gajda</h1>
+        <h2 className="header__submain">Front End developer/ UI designer</h2>
         <img src={separator} className="header__separator" alt="separator" />
 
         <div className="header__social-media">
