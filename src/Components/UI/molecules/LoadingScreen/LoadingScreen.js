@@ -18,20 +18,7 @@ class LoadingScreen extends React.Component{
         return(
             <div className="loading__container">
                 <div className="loading__wrapper">
-                    <img className="loading__logo" src={logo} alt="logo"/>
-                    <div class='loader loader1'>
-                        <div>
-                            <div>
-                            <div>
-                                <div>
-                                <div>
-                                    <div></div>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="spinner"></div>
                 </div>
             </div>
         )

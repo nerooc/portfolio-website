@@ -30,11 +30,10 @@ class App extends React.Component {
 
   render() {
       
-      /*let loadingScreen = this.state.loading
+      let loadingScreen = this.state.loading
           ? <LoadingScreen/>
-          : null; */
+          : null; 
 
-      let loadingScreen = null;    
 
       return (
         <> 

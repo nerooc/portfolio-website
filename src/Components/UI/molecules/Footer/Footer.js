@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 import mail from '../../../../images/footer/mail-footer.svg';
-import freecodecamp from '../../../../images/footer/freecodecamp-footer.svg';
+import figma from '../../../../images/footer/figma.svg';
 import linkedin from '../../../../images/footer/linked-in-footer.svg';
 import codepen from '../../../../images/footer/codepen-footer.svg';
 import arrow from '../../../../images/footer/double-arrow-up.svg';
@@ -22,11 +22,11 @@ const Footer = props => (
             <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.freecodecamp.org/nerooc">
+                href="https://www.figma.com/@nerooc">
 
                 <img
                     className="footer__social-media-unit"
-                    src={freecodecamp}
+                    src={figma}
                     alt="fb-footer-svg"/>
             </a>
 
