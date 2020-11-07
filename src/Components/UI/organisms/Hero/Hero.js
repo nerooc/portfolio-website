@@ -5,6 +5,7 @@ import Scroll from '../../atoms/Scroll/Scroll';
 
 import './Hero.css';
 
+
 const Hero = () => (
   <div className="hero">
     <Navbar />

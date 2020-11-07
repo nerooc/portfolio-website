@@ -17,8 +17,20 @@ class App extends React.Component {
     loading: true
   }
 
+  setDocHeight() {
+    document
+        .documentElement
+        .style
+        .setProperty('--vh', `${window.innerHeight / 100}px`);
+  };
+
   componentDidMount() {
-    this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500);
+      this.timerHandle = setTimeout(() => this.setState({loading: false}), 3500);
+      this.setDocHeight();
+
+      /* THIS IS CAUSING THE STAGGER ON MOBILE */
+      window.addEventListener('resize', this.setDocHeight)
+      window.addEventListener('orientationchange', this.setDocHeight)
   }
 
   componentWillUnmount(){
