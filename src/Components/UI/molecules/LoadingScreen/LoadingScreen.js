@@ -1,10 +1,6 @@
 import React from 'react';
 import './LoadingScreen.css';
 
-import logo from '../../../../images/navbar/logo.svg';
-
-
-
 class LoadingScreen extends React.Component{
     componentDidMount() {
         document.body.style.overflow = 'hidden';
@@ -12,6 +8,8 @@ class LoadingScreen extends React.Component{
     
     componentWillUnmount() {
         document.body.style.overflow = 'unset';
+        document.body.style.overflowX = 'hidden';
+        document.body.style.overflowyY = 'scroll';
     }
 
     render(){
