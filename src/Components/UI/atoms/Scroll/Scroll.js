@@ -1,9 +1,8 @@
 import React from 'react'
-import arrow from '../../../../images/scroll/white-arrow.svg';
 
 /* scroll component */
 const Scroll = props => (
-    <img className = {props.className} src={arrow} alt="arrow"/>
+    <img className = {props.className} src="./images/scroll/white-arrow.svg" alt="arrow"/>
 )
 
 export default Scroll;

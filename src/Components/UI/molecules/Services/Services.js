@@ -3,29 +3,25 @@ import Service from '../../atoms/Service/Service';
 
 import './Services.css';
 
-import design_icon from '../../../../images/services/design.png';
-import maintenance_icon from '../../../../images/services/maintenance.png';
-import development_icon from '../../../../images/services/development.png';
-
 class Services extends React.Component{
   state = {
     services: {
       design: {
         title: "DESIGN",
-        source: design_icon,
+        source: "./images/services/design.png",
         text: "I can design the website based on your needs and suggestions. I can also create it from scratch by consulting with you during my work."
       },
 
       development: {
         title: "DEVELOPMENT",
-        source: development_icon,
+        source: "./images/services/development.png",
         text: "Based on a project created by me (or any another one provided by you), I can program the website to be fully functional and responsive."
       },
 
       maintenance:{
         title: "MAINTENANCE",
-        source: maintenance_icon,
-        text: "In case of any problems or the need for changes, I can introduce new functionalities and solutions."
+        source: "./images/services/maintenance.png",
+        text: "In case of any problems or a need for changes, I can introduce new functionalities and solutions."
       }
     }
   }

@@ -3,7 +3,6 @@ import SectionHeader from '../../atoms/SectionHeader/SectionHeader';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 import Services from '../../molecules/Services/Services';
-import separator from '../../../../images/separators/separatorBlack.png';
 import Skills from '../Skills/Skills';
 
 import './About.css';
@@ -23,11 +22,11 @@ const About = props => (
         }}
         className="about__button">MORE</Button>
 
-      <img src={separator} className="about__separator" alt="aboutSeparator" />
+      <img src="./images/separators/separatorBlack.png" className="about__separator" alt="aboutSeparator" />
 
       <Services />
 
-      <img src={separator} className="about__separator" alt="aboutSeparator" />
+      <img src="./images/separators/separatorBlack.png" className="about__separator" alt="aboutSeparator" />
     </div>
     <Skills />
   </div>

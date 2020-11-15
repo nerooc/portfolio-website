@@ -1,0 +1,105 @@
+{
+    "csux": {
+        "name": "csux.pl",
+        "tags": ["coded"],
+        "image": "./images/projects/csux.png",
+        "description": "Official \"Ciemna Strona UX\" conference website",
+        "demolink": "http://csux.pl",
+        "ghlink": "https://github.com/nerooc/ciemnastronaux"
+    },
+
+    "AureliaPoC": {
+        "name": "MotoBlog",
+        "tags": ["coded"],
+        "image": "./images/projects/motoblog.png",
+        "description": "A demo blog application made using Aurelia.js",
+        "ghlink": "https://github.com/nerooc/Aurelia.js-PoC"
+    },
+
+    "brickBreaker": {
+        "name": "Brick Breaker",
+        "tags": ["coded"],
+        "image": "./images/projects/brickbreaker.png",
+        "description": "Basic Javascript game created using Canvas",
+        "ghlink": "https://github.com/nerooc/Brick-Breaker"
+    },
+
+    "eatsome": {
+        "name": "eatsome.",
+        "tags": ["coded"],
+        "image": "./images/projects/eatsome.png",
+        "description": "Restaurant browsing in React.js (using Yelp API)",
+        "demolink": "http://eatsome-tgajda.mybluemix.net/",
+        "ghlink": "https://github.com/nerooc/eatsome."
+    },
+
+    "otcSite": {
+        "name": "OTC Site",
+        "tags": [
+            "coded", "designed"
+        ],
+        "image": "./images/projects/otcsite.png",
+        "description": "Landing page for OTC company in Cracow",
+        "ghlink": "https://github.com/nerooc/otc-site",
+        "figmalink": "https://www.figma.com/file/COgxLYsHi0iFKIrTDrcRWZ/OTC-Site---Official?node-id=0%3A1&viewport=912%2C699%2C0.06757233291864395"
+    },
+
+    "jamming": {
+        "name": "Jammming",
+        "tags": ["coded"],
+        "image": "./images/projects/jammming.png",
+        "description": "Search for songs and create new playlists with React.js",
+        "ghlink": "https://github.com/nerooc/jammming"
+    },
+
+    "budgety": {
+        "name": "Budgety",
+        "tags": ["coded"],
+        "image": "./images/projects/budgety.png",
+        "demolink": "http://budgety-app-tgajda.mybluemix.net/",
+        "description": "JS app that allows you to count your monthly budget",
+        "ghlink": "https://github.com/nerooc/budgety"
+    },
+
+    "pigDiceGame": {
+        "name": "Pig Dice Game",
+        "tags": ["coded"],
+        "image": "./images/projects/pig.png",
+        "description": "A dice game named \"Pig\"",
+        "ghlink": "https://github.com/nerooc/Pig-Dice-Game"
+    },
+
+    "sexycars": {
+        "name": "sexycars.pl",
+        "tags": ["designed"],
+        "image": "./images/projects/sexycars.png",
+        "description": "Sports car rental website (redesign)",
+        "figmalink": "https://www.figma.com/file/Q2KZzeaxKQy6VmJzzKbOj0/sexycars---Official?node-id=0%3A1&viewport=2154%2C3021%2C0.8898117542266846"
+    },
+
+    "sgo": {
+        "name": "DOF Simulator",
+        "tags": ["coded"],
+        "image": "./images/projects/sgo.png",
+        "description": "C++ depth of field sim made with WxWidgets",
+        "ghlink": "https://github.com/nerooc/symulacja-glebi-ostrosci"
+    },
+
+    "forkify": {
+        "name": "Forkify",
+        "tags": ["coded"],
+        "image": "./images/projects/forkify.png",
+        "demolink": "http://forkify-app-tgajda.mybluemix.net/index.html",
+        "description": "Recipe browsing in Javascript (using food2fork API)",
+        "ghlink": "https://github.com/nerooc/forkify"
+    },
+
+    "discordBot": {
+        "name": "Discord Bot",
+        "tags": ["coded"],
+        "image": "./images/projects/discordbot.png",
+        "description": "Discord bot written in Javascript (Discord.js)",
+        "ghlink": "https://github.com/nerooc/discord-bot"
+    }
+
+}

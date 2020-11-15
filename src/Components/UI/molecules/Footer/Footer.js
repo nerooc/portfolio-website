@@ -1,18 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
-import mail from '../../../../images/footer/mail-footer.svg';
-import figma from '../../../../images/footer/figma.svg';
-import linkedin from '../../../../images/footer/linked-in-footer.svg';
-import codepen from '../../../../images/footer/codepen-footer.svg';
-import arrow from '../../../../images/footer/double-arrow-up.svg';
-
 const Footer = props => (
     <footer className="footer">
 
         <div className="footer__toTop">
             <a href="#" title="back-to-top">
-                <img src={arrow} alt="double-arrow-back"/>
+                <img src="./images/footer/double-arrow-up.svg" alt="double-arrow-back"/>
                 <p>BACK TO TOP</p>
             </a>
         </div>
@@ -26,7 +20,7 @@ const Footer = props => (
 
                 <img
                     className="footer__social-media-unit"
-                    src={figma}
+                    src="./images/footer/figma.svg"
                     alt="fb-footer-svg"/>
             </a>
 
@@ -37,20 +31,23 @@ const Footer = props => (
 
                 <img
                     className="footer__social-media-unit"
-                    src={linkedin}
+                    src="./images/footer/linked-in-footer.svg"
                     alt="linkedin-footer-svg"/>
             </a>
 
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://codepen.io/nerooc">
+            <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/nerooc">
 
-                <img className="footer__social-media-unit" src={codepen} alt="ig-footer-svg"/>
+                <img
+                    className="footer__social-media-unit"
+                    src="./images/footer/codepen-footer.svg"
+                    alt="ig-footer-svg"/>
             </a>
 
             <a href="mailto:tomasz_gajda@outlook.com">
-                <img className="footer__social-media-unit" src={mail} alt="mail-footer-svg"/>
+                <img
+                    className="footer__social-media-unit"
+                    src="./images/footer/mail-footer.svg"
+                    alt="mail-footer-svg"/>
             </a>
 
         </div>

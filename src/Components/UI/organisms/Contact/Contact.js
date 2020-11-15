@@ -7,8 +7,6 @@ import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Input from '../../atoms/Input/Input';
 import Button from '../../atoms/Button/Button';
 
-import separator from '../../../../images/separators/separatorBlack.png';
-
 import './Contact.css';
 
 class Contact extends React.Component {
@@ -232,7 +230,7 @@ class Contact extends React.Component {
                     please contact me by e-mail or use the form below.
                 </Paragraph>
 
-                <img src={separator} className="contact__separator" alt="contactSeparator"/>
+                <img src="./images/separators/separatorBlack.png" className="contact__separator" alt="contactSeparator"/>
 
                 <div className={formWrapperClasses.join(' ')}>
                     {form}
