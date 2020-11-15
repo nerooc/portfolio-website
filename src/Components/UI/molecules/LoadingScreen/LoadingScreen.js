@@ -16,7 +16,7 @@ class LoadingScreen extends React.Component{
         return(
             <div className="loading__container">
                 <div className="loading__wrapper">
-                    <div class="spinner"></div>
+                    <div className="spinner"></div>
                 </div>
             </div>
         )
