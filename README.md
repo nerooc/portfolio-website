@@ -11,7 +11,7 @@
 - emailjs
 - styled-components
 
-Portfolio website written in a **React.js**. 
+Portfolio website written in **React.js**. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
