@@ -1,6 +1,6 @@
 # `Portfolio Website`
 
-### [OPEN DEMO](https://tomasz-gajda.netlify.app/)
+### [OPEN DEMO](tomaszgajda.com)
 
 ## Tech stack
 - HTML
