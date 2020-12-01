@@ -21,6 +21,7 @@
         "tags": ["coded"],
         "image": "./images/projects/brickbreaker.png",
         "description": "Basic Javascript game created using Canvas",
+        "demolink": "https://brick-breaker-tg.netlify.app/",
         "ghlink": "https://github.com/nerooc/Brick-Breaker"
     },
 
@@ -29,7 +30,7 @@
         "tags": ["coded"],
         "image": "./images/projects/eatsome.png",
         "description": "Restaurant browsing in React.js (using Yelp API)",
-        "demolink": "http://eatsome-tgajda.mybluemix.net/",
+        "demolink": "https://eatsome.netlify.app/",
         "ghlink": "https://github.com/nerooc/eatsome."
     },
 
@@ -56,7 +57,7 @@
         "name": "Budgety",
         "tags": ["coded"],
         "image": "./images/projects/budgety.png",
-        "demolink": "http://budgety-app-tgajda.mybluemix.net/",
+        "demolink": "https://budgety-tg.netlify.app/",
         "description": "JS app that allows you to count your monthly budget",
         "ghlink": "https://github.com/nerooc/budgety"
     },
@@ -66,6 +67,7 @@
         "tags": ["coded"],
         "image": "./images/projects/pig.png",
         "description": "A dice game named \"Pig\"",
+        "demolink": "https://pig-dice-gm.netlify.app/",
         "ghlink": "https://github.com/nerooc/Pig-Dice-Game"
     },
 
@@ -89,7 +91,7 @@
         "name": "Forkify",
         "tags": ["coded"],
         "image": "./images/projects/forkify.png",
-        "demolink": "http://forkify-app-tgajda.mybluemix.net/index.html",
+        "demolink": "https://forkify-tg.netlify.app/",
         "description": "Recipe browsing in Javascript (using food2fork API)",
         "ghlink": "https://github.com/nerooc/forkify"
     },

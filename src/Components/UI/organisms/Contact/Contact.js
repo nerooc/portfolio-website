@@ -209,9 +209,19 @@ class Contact extends React.Component {
                             The email has been successfully sent!
                         </div>
                     : <div className="contact__email emailError">
-                        There has been an error when sending...
+                        There has been an error with sending...
                     </div>
+
             }
+
+            // Turn the notification off after 6 seconds
+            setTimeout(() => {
+                this.setState({
+                    email: {
+                        emailSent: false
+                    }
+                })
+            }, 6000);
         }
 
         let formWrapperClasses = ['contact__formwrapper'];
@@ -227,10 +237,13 @@ class Contact extends React.Component {
 
                 <Paragraph className="contact__paragraph">
                     If you are interested in cooperation or would like to hire me for your project -
-                    please contact me by e-mail or use the form below.
+                    please contact me by e-mail <span style={{fontWeight: "bold"}}>(tomasz_gajda@outlook.com)</span> or use the form below.
                 </Paragraph>
 
-                <img src="./images/separators/separatorBlack.png" className="contact__separator" alt="contactSeparator"/>
+                <img
+                    src="./images/separators/separatorBlack.png"
+                    className="contact__separator"
+                    alt="contactSeparator"/>
 
                 <div className={formWrapperClasses.join(' ')}>
                     {form}
