@@ -14,7 +14,7 @@ const Skills = props => (
             <div className="skills__container">
                 <Skill source="./images/skills/html5.svg">HTML5</Skill>
                 <Skill source="./images/skills/css3.svg">CSS3</Skill>
-                <Skill source="./images/skills/sass.svg"></Skill>
+                <Skill source="./images/skills/sass.svg">SASS</Skill>
                 <Skill source="./images/skills/js.svg">Javascript</Skill>
                 <Skill source="./images/skills/react.svg">React</Skill>
                 <Skill source="./images/skills/bootstrap.svg">Bootstrap</Skill>
