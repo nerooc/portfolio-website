@@ -34,7 +34,6 @@
     display: inline-block;
     position: relative; }
 
-    .hamburger:focus { outline: none; } 
   
   .hamburger-inner {
     display: block;
