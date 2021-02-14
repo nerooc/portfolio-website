@@ -1,6 +1,6 @@
 # `Portfolio Website`
 
-### [OPEN DEMO](tomaszgajda.com)
+### [OPEN DEMO](https://www.tomaszgajda.com/)
 
 ## Tech stack
 - HTML
